@@ -87,8 +87,8 @@ def process_file(input_file, output_file, chunk_size=1000):
                 logging.warning("처리 오류로 인해 None 결과가 발생했습니다.")
 
 if __name__ == "__main__":
-    input_file = "/home/user/문서/GitHub/Data Preprocessing/youtube_scripts/Complete Generative AI With Azure Cloud Open AI Services Crash Course - English.txt"  # 입력 파일 경로로 교체
-    output_file = "/home/user/문서/GitHub/Data Preprocessing/Processed_data/Azure_script/result.txt"  # 원하는 출력 파일 경로로 교체
+    input_file = "./youtube_scripts/Complete Generative AI With Azure Cloud Open AI Services Crash Course - English.txt"  # 입력 파일 경로로 교체
+    output_file = "./Processed_data/Azure_script/result.txt"  # 원하는 출력 파일 경로로 교체
 
     if not os.path.exists(input_file):
         logging.error(f"입력 파일을 찾을 수 없습니다: {input_file}")

@@ -5,9 +5,10 @@ import os
 import logging
 from tqdm import tqdm
 
-# 로깅 설정
+# 로깅 설정 (인코딩 추가)
 logging.basicConfig(filename='text_processing.log', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    encoding='utf-8')
 
 # 영어 언어 모델 로드
 nlp = spacy.load("en_core_web_sm", disable=["ner", "textcat"])

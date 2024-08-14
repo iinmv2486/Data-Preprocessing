@@ -1,0 +1,8934 @@
+hello guys so here is an amazing crash
+
+course on developing generative AI
+
+application using Azure open services so
+
+AZ open Services was one of the most
+
+requested video by all of you and I feel
+
+that this crash course will definitely
+
+help you learn a lot of things out there
+
+uh this entire crash course has been
+
+developed by S Savita uh who is an
+
+amazing Mentor uh I will be providing
+
+his YouTube channel in the description
+
+of this particular video along with the
+
+entire code materials about his GitHub
+
+everything will be available in the
+
+description so please make sure that you
+
+watch this video till the end and
+
+definitely make sure to implement each
+
+and everything because this crash course
+
+is going to be for 3 hours and along
+
+with that you will be able to find out
+
+the entire timestamps in the description
+
+of this particular video so yes go ahead
+
+and I've been just going to keep a
+
+target of likes for this particular
+
+video let's keep the target to 2,000 and
+
+I hope uh you will be able to achieve it
+
+as soon as possible yes go ahead and
+
+enjoy the scratch course thank you
+
+hey hello everyone welcome to this azir
+
+openi crash course in this azer open
+
+crash course we'll try to understand
+
+each and every aspect of the azer open
+
+and we'll try to understand it from
+
+basic to Advanced so guys first of all
+
+let me introduce myself my name is s
+
+Savita and I will be your host for this
+
+entire course I'm having around four
+
+year of experience with data science
+
+machine learning deep learning mlops and
+
+and from past one year I working with
+
+the generative AI so guys let's start so
+
+uh first of all let me show you the pp
+
+uh which I created for all of you uh
+
+just to just to introduce all the
+
+modules and all uh whatever we are going
+
+to discuss in this particular course so
+
+in the first module we'll discuss about
+
+the introduction of the Azure open AI
+
+that uh we'll try to discuss the
+
+differences between Azure open a versus
+
+open a then we'll see the how you can
+
+access the a account how you can create
+
+it and uh we'll see the subscription
+
+method and all so we uh this Basics
+
+first I will start this Basics only and
+
+then after this one I will come to this
+
+uh uh like little Advanced part where
+
+we'll see then how we can access the
+
+aure open a okay uh apart from this one
+
+resource creation model
+
+deployment understanding uh token per
+
+minute what is this limit and this uh
+
+request per minute and then we'll talk
+
+about the chat playground and and will
+
+discuss the different different model
+
+how you can access these different
+
+different model like GPD 3.54 Delhi
+
+whisper and all then we'll understand
+
+how you can use the python SDK for uh
+
+like for using this uh chat completion
+
+API we'll try to access the various
+
+model using this chat completion API
+
+we'll write the code inside our local
+
+system and finally we are going to
+
+create our custom web app and we'll
+
+deploy it also now after this one after
+
+this Aero I will come to the function
+
+calling using Azure open we'll use it
+
+using the python SDK only we'll try to
+
+write a code inside the local and we'll
+
+try to call any third party API then
+
+after we'll discuss about the finetuning
+
+concept of the azero we'll select the
+
+appropriate model for the fine tuning
+
+we'll prepare the data for it we'll talk
+
+about the complete cost and all and
+
+we'll see how we can find you the model
+
+inside the azer open AI now at the and
+
+we discuss about this a your AI studio
+
+so guys this is very important thing a
+
+your AI studio and uh first we'll see
+
+how you can create a your AI Hub and the
+
+resources we'll try to uh deploy the
+
+various model over here and then I will
+
+create our custom rag application so
+
+before this one uh I was talking about
+
+the fine tuning now after the fine
+
+tuning I'll be discussing about the rag
+
+so we'll create our own a complete
+
+pipeline using this prf flow it provide
+
+one uh specific it provide one specific
+
+uh service that is called prom flow with
+
+that actually we can create our own
+
+custom application we can deploy it we
+
+can generate the endpoint URL and we can
+
+connect with our own custom application
+
+also so yes at the end we we will create
+
+our own chatbot using flask and we'll
+
+try to consume the rag model from where
+
+from the Azure AI studio so I hope this
+
+syllabus is clear to all of you now uh
+
+let's do one thing let's start up from
+
+the Azure itself so guys once you will
+
+search over the Google let me search in
+
+front of you so if you will go and
+
+search aor so here I can write aor AI
+
+Services okay aor AI services so you
+
+will get all the services which is being
+
+provided by the Azo itself now uh simply
+
+you can sign in if you have account uh I
+
+will be coming to the account first of
+
+all let me show you all the services so
+
+guys uh these are the services or here I
+
+can search over the portal itself was AO
+
+AI Services okay so uh see guys this is
+
+all the services which is being provided
+
+by the Azure AI so first is openi itself
+
+then AI search then computer vision face
+
+API then spe service custom Vision
+
+language service translation document
+
+intelligence is one of them board
+
+service anom detective there are various
+
+services and here directly you can use
+
+the service and uh you can create your
+
+own custom application you can configure
+
+it in your own custom way and then you
+
+can utilize it guys okay now a your AI
+
+Services is fine so here first basically
+
+we are going to be start this a your
+
+open account itself and then I will come
+
+to the AI studio right this two thing
+
+this both thing is different this AZ
+
+your open AI account uh and this a your
+
+AI Studio okay so uh apart from this one
+
+we have this document intelligence also
+
+where we can upload the document and and
+
+for that we'll have to configure the
+
+database and all yes for these Services
+
+also like a your openi studio and a your
+
+AI Studio we'll have to configure the
+
+database and that service is also very
+
+very easy no need to do anything it's a
+
+very uh like simple simple thing and
+
+here itself uh in this particular
+
+tutorial I will show you now first of
+
+all guys what you need to do so see you
+
+need to sign up right if you don't have
+
+any account so here I already log in
+
+with my account account so if you don't
+
+have any account guys first of all you
+
+need to sign up to the Azure portal now
+
+let me write over here Azure portal so
+
+if you will write this as your portal
+
+guys you will get it this one so first
+
+of all sign up over here uh you can sign
+
+up with your Gmail ID your outlook or
+
+with your third party account as well if
+
+it is giving you the permission then
+
+after the sign up so once you will sign
+
+up uh then definitely you can login over
+
+here and then after the login you will
+
+find out this particular page okay this
+
+is the homepage of the azard portal now
+
+there are so many option guys so many
+
+services and all so first of all what
+
+you have to do you have to add the
+
+subscription now once you will click on
+
+this subscription guys see this is here
+
+are they are giving the option of the
+
+subscription just click over here so I
+
+already added the subscription see uh
+
+here this subscription plays a very
+
+important role uh definitely it will
+
+provide you the $ 300 free dollar credit
+
+but uh you cannot use it for most of the
+
+services it is uh like those credit you
+
+can only use for some services like for
+
+creating a basic B app and all okay free
+
+tire B app that's it nothing uh like
+
+else so if you want to use this AZ your
+
+open a or other storage account or aure
+
+Ai Se or different other services
+
+related to the AI definitely you will
+
+have to add the subscription yes guys
+
+this is very much important so uh first
+
+of all you have to create your
+
+subscription you can simply create click
+
+on this ad you can write your
+
+subscription name and uh yes you can add
+
+your uh you can add your card or you can
+
+add your like uh you can you can add
+
+your debit card credit card whatever it
+
+is asking and finally you can start
+
+using it so if you will see guys here it
+
+is providing you this a free credit but
+
+again uh 55 Services it is providing to
+
+you so you can go and check out but uh
+
+believe me guys this openi service you
+
+cannot exist inside this free tile you
+
+will have to you will have to add this
+
+pay as you go uh over here right now I
+
+think this subscription and account is
+
+fine to all of you and I believe you can
+
+do it you can create it now coming to
+
+the next point so uh here what we have
+
+guys see here we have this azer open AI
+
+now I will search it inside the search
+
+box definitely I will be getting it so
+
+let me search over here this azer open
+
+see I'm getting it so uh if you are uh
+
+if you are searching it first time the
+
+uh definition you will you won't get a
+
+option for creating it so first you will
+
+have to uh like make a request okay so
+
+first you will have to make a request
+
+and then only you can access this as
+
+your openi service uh if you are not
+
+making a request guys you won't be able
+
+to uh access this service and this
+
+request approval actually takes around
+
+24hour time so within one business day
+
+they will approve your request and then
+
+you can utilize this particular service
+
+I hope this thing is clear to all of you
+
+now coming to the next point that what
+
+is the difference between this Azure
+
+open Ai and open AI means a your open
+
+API and open a API okay so first of all
+
+let me show you this open AI API so if
+
+I'm searching over here open AI API now
+
+uh you will get it uh so let me open it
+
+first of all explore the API and start
+
+building so this is what this is my h
+
+this is my openi API right so uh yes uh
+
+I think we all have used this openi API
+
+and even uh on this channel itself
+
+you'll find out many video related to
+
+this openai API in all and uh definitely
+
+you can generate the API key you can
+
+access the various model we have a
+
+various model basically here inside this
+
+uh aure inside this openi itself like uh
+
+GPT GPT GPT 3.5 gp4 whisper Delhi
+
+various model right now guys uh first of
+
+all we have to see the differences right
+
+because until unless we are not going to
+
+understand the
+
+differences there will be a confusion
+
+okay so what I did I created uh like
+
+one like here I written the differences
+
+for all of you I think it is visible now
+
+so a your openi versus openi so uh just
+
+just try to read over here what uh what
+
+I have mentioned so a your open actually
+
+it is providing you the managed
+
+infrastructure okay where it is
+
+providing you all the security right all
+
+the security and here you can see AZ
+
+openi offers private networking reasonal
+
+availability and responsible AI flood TR
+
+okay now uh on the other hand we have
+
+this open AI so if you will uh see
+
+inside the open so it is like I have
+
+written over here open itself is not a
+
+secure okay so here this Azure open like
+
+whatever Services it is providing to you
+
+uh like whatever security Feature
+
+alerting Feature metrix and all I will
+
+come to that I will explain you in a
+
+detail I have kep couple of more images
+
+okay so yes those feature is there
+
+inside the a open but if you're going to
+
+use open only open you won't get those
+
+feature definitely you can access the
+
+model whatever model they are providing
+
+to providing to you and you can uh use
+
+those model okay inside your
+
+infrastructure so whatever
+
+infrastructure you have created with
+
+whatever security compliances and all so
+
+you can use over there there but you
+
+won't be like get the so here actually
+
+it won't be a manage service you are
+
+doing it by yourself it's a custom one
+
+right which you are doing from your end
+
+and there you are consuming this open AI
+
+API but on the other hand if you if
+
+you're going to see this Azure open API
+
+it is providing you the complete manage
+
+service means it is providing the model
+
+along with that security different
+
+different matrixes alert alarm and all
+
+and here you can see the last one is
+
+what responsible AI content filtering so
+
+responsible AI content filtering means
+
+what so uh like no other harmful
+
+activity which uh like if you are
+
+performing any harmful activity uh with
+
+respect to that model so they will block
+
+you okay and yes uh they will take this
+
+action immediately so that like you
+
+cannot perform any unusual activity now
+
+here uh the second one is what
+
+functionality such as uh raising an
+
+alert whenever suspicious activity for
+
+instance changing of a primary key are
+
+supported so it is providing you it is
+
+providing you multiple key okay uh
+
+actually it provide you two key two API
+
+key so if let's say one key is going to
+
+be exposed so immediately it will rotate
+
+the key okay so it is having that a
+
+particular mechanism so automatically it
+
+will be done now other other other than
+
+this azeria you will find out this
+
+functionality like there is not
+
+supported so it is highly likely that
+
+data T happen means uh this open a
+
+actually it is not providing you that
+
+type of functionality it is just
+
+providing the simple uh key and uh not
+
+it is not providing you the other of
+
+functionality okay it is not providing
+
+the other functionality related to the
+
+security and all now coming to the
+
+security part so in the security part
+
+see here I have mention so first one is
+
+what multifactor authentication the
+
+second is what a data encryption at rest
+
+right the third one is what rbsc role
+
+based access management you can create a
+
+specific role for the specific Services
+
+as your keyboard for for keeping safe
+
+your keys and all okay Keys uh and
+
+whatever like your important information
+
+is there if you want to keep it
+
+somewhere uh you can keep it over here
+
+okay now the second next one is what
+
+service end point so here private
+
+endpoint public endpoint both endpoint
+
+actually you can create and you can
+
+expose it according to your requirement
+
+I hope this thing is getting clear what
+
+is the primary difference between this
+
+Azure open and open AI now model wise so
+
+it is provide the GPD engine GPD 3.5 GPD
+
+3.5 turbo GPD 4 gp4 o also then Tex
+
+embedding right and then Deli engine
+
+then chat playground evaluation and
+
+matrixes so in short uh I can conclude
+
+it I can say here Azure open AI it's a
+
+completely managed service from the
+
+Microsoft this Azure open AI is nothing
+
+it's a collaboration of azure and open
+
+AI getting my point now this Azure open
+
+I what uh like it is providing to you
+
+it's is providing the many security
+
+features security alarms and all
+
+everything so I hope uh if someone is
+
+going to ask you this thing in an
+
+interview definitely you will be able to
+
+clarify it now coming to the next Point
+
+here so see so here if you want to uh
+
+access any model inside this a your open
+
+AI so first of all uh you will have to
+
+create it so once you will click on this
+
+create just do it just click on this
+
+create and here uh you will have to
+
+select the meth so that is what actually
+
+I was telling you in the free services
+
+uh like you cannot access this as your
+
+open AI you want to read more in more
+
+detail about the free services I think I
+
+already shown you about it you can go
+
+and check out now first select the
+
+subscription so this is the subscription
+
+which I have created for me then you
+
+will have to create the resource Group
+
+so as of now I don't have any Resource
+
+Group so let me create the resource
+
+Group over here so here it's going to be
+
+crash H now uh let me click on this uh
+
+okay and then here is a reason guys you
+
+can select the reason according to your
+
+requirement I will come to this reason
+
+and pricing also because it plays a very
+
+important role I will come to the
+
+documentation of the AIO AI Services
+
+there they have given this uh there they
+
+have given the documentation related to
+
+each and every service all right now uh
+
+let me write the name over here so name
+
+basically uh here I can write crash for
+
+okay so crash course models so this is
+
+what this is my name you can write any
+
+sort of a name you can write uh you can
+
+give any name over here then pricing
+
+tier so automatically it will give it to
+
+you what according to your subscription
+
+so I took the standard subscription uh
+
+they are having premium or like
+
+Enterprise level subscription also
+
+definitely can check out now off view
+
+full pricing detail I will come to the
+
+pricing detail guys now after filling
+
+all this information what you need to do
+
+you need to click on this next after
+
+clicking on this next here U keep it by
+
+default then again next and here no need
+
+to do anything then uh here if you want
+
+to check the resources you can check so
+
+first is aure eii service second is
+
+Resource Group so this two resources it
+
+is uh like showing you over here now
+
+coming to the next again and then uh
+
+simply you it is first it is going to be
+
+validate now once the validation will be
+
+done you can create it over here so
+
+let's wait for 1 minute okay now it is
+
+done see guys so just simply click on
+
+click on this create and here you can
+
+see your deployment is initializing so
+
+you can see your deployment over here
+
+right hand side now uh until it is
+
+getting deployed let me uh show you few
+
+more things related to this as your open
+
+AI so guys here uh see this is what uh
+
+this the portal let me close it it is
+
+not required as of now or simply search
+
+about this a your AI service document
+
+okay so once you will search it guys
+
+here you will get this very first link
+
+just click over here I'll just open it
+
+let me close this this one so see you
+
+will get the uh page okay you will get
+
+this page where you will get get the
+
+documentation related to each and every
+
+service so here is aerop speech language
+
+translator Vision custom Vision phase
+
+content safety video indexing uh video
+
+indexer Aur I search whatever you want
+
+whatever you want they are providing you
+
+the a documentation related to each and
+
+every service now what I have to do here
+
+guys see I have to open this
+
+documentation as your open AI now uh
+
+this is the documentation and here just
+
+click on this model so this is all the
+
+like details and all related to this AER
+
+openi but uh later on I will come to
+
+this Kota limit deployment types and all
+
+everything so first let me show you this
+
+model now once I will click on this
+
+model guys just scroll down here and you
+
+will get one table right so inside that
+
+table you will get you will see that
+
+which model is accessible in which
+
+reason okay now uh here I have selected
+
+uh East us this reason now inside this
+
+East us what all model is accessible
+
+just just see over here this GPT 4613 is
+
+not there 0613 means what it's a date it
+
+is representing a date okay 13 June so
+
+this is the date and here is a month got
+
+it now this gp4 is not accessible gp4
+
+1106 this is also not accessible gp4
+
+0125 this is accessible then gp4 Vision
+
+this is not accessible gp4 turbo this is
+
+also not accessible and here you can see
+
+the list of the model OKAY related to
+
+what related to the tell me related to
+
+the reason so you can easy easily check
+
+which model is accessible in which
+
+reason now apart from this one guys here
+
+if you will go and check with the
+
+pricing so we will get the complete
+
+detail of the pricing as well according
+
+to the according to what according to
+
+the reason so in which reason which
+
+model is giving you how much uh cost so
+
+if we're going to talk about this GPD
+
+3.5 turbo
+
+0.25 so this is the pricing of it in
+
+like based on the input tokens so this
+
+input token actually it is based on the
+
+R so 1,000 token uh sorry 1,000 token
+
+per minute actually you can uh process
+
+okay within this price
+
+0.5 so likewise you can calculate other
+
+than this one I will show you the cost
+
+calculator as well later on I will come
+
+to that once I will explore the a AI
+
+studio so there I have involved the cost
+
+calculator also for the complete cost
+
+analysis got it because that is very
+
+much important now uh the next one is
+
+what Legacy model so these are the
+
+Legacy model different different Legacy
+
+model assistant API code interpreter and
+
+all now base model B Bas Lain and here
+
+you will find out that fine tuning is
+
+not available in this reason yes guys so
+
+if you want to do fine tuning model you
+
+cannot do in this particular reason
+
+definitely I will have to change the
+
+reason so let's try to check with some
+
+other reason so here what I'm doing so
+
+here I'm going to be click on this South
+
+Central us let's see whether it is
+
+available over here or not so here guys
+
+see it is not available in this this
+
+particular reason also north central
+
+reason yes so inside this reason the
+
+spine tuning is available now you can
+
+simply check the price and here guys you
+
+will find out the price is very very
+
+costly of the fine tuning yes so weage
+
+$34 training per computer hour and uh
+
+here you can see the hosting price input
+
+uses per th000 token so this is the
+
+price for the per th000 token okay then
+
+output use is per th000 token here is a
+
+price now just see this price $34 $68
+
+for what for this dpd 3.5 it is a pretty
+
+much High guys because see whenever we
+
+are passing the data to the model okay
+
+so it takes around around okay minimum
+
+if you are passing minimum 5200 rows on
+
+now so it takes around like 30 35 to 40
+
+minute I I already seen I already
+
+checked and in that in between that only
+
+you will get around $60 so this fine
+
+tuning actually it is very very costly
+
+right so other then this one I will show
+
+you the rag like how you can create the
+
+rag uh basically and rag is also like
+
+not a cheaper one it is also very costly
+
+because uh with the rag this database
+
+cost is associated so we'll come to the
+
+rag and we'll try to explore the rag as
+
+well now I hope guys you got the
+
+overview definitely you can check out
+
+and according to your requirement you
+
+can select the model and you can
+
+calculate the price now one more thing
+
+you'll find out over here if I'm going
+
+back so here you'll find out the
+
+deployment types so first uh let me
+
+click over here on this deployment type
+
+so uh the basic one is the standard one
+
+okay now the next one is what provision
+
+and the deploy and the global one okay
+
+here is what here's a global global
+
+deployment so generally actually we
+
+going to use this standard only because
+
+my pricing the subscription which I took
+
+it's a standard one if I want to take
+
+this provision so specifically I will
+
+have to make a request for this
+
+provision now I will show you what all
+
+model is there inside the provision and
+
+what all model is there inside the
+
+standard and what a model actually
+
+you'll find out inside the global reason
+
+everything I'll be showing you where
+
+over the portal itself now I hope your
+
+all the basics is clear coming to the
+
+next part so once you will open your
+
+azer so here see it is ready simply
+
+click on this go to the resources once
+
+you will click on this go to the
+
+resources guys here it is giving you the
+
+different different option right no need
+
+to go through with each and every option
+
+as of now so here uh let me show you
+
+which is the like uh necessary for you
+
+so first is this key and uh Endo so this
+
+I was telling to you that it is
+
+providing you two keys right so yes uh
+
+here is the first key and this is the
+
+second key you can utilize any key so
+
+for accessing your model so this is
+
+called primary key and here is what
+
+here's a like secondary key now you can
+
+read over here these keys are used to
+
+access your as your openi service do not
+
+share your key right each and every
+
+detail that like sharing with you we
+
+also recommend regenerating the key
+
+regularly you you can regenerate the key
+
+also over here and one only one key is
+
+necessary to make API call only one key
+
+is necessary no need to use both key
+
+over here then here's a reason so East
+
+us we are working in this reason and
+
+this is what this is the endpoint URL
+
+okay so this thing is clear to all of
+
+you now coming to the next one so guys
+
+here if you will click on this model
+
+deployment see let me click on this
+
+model deployment and here see there's a
+
+option manage deployment now they are
+
+telling to you model deployment feature
+
+have moved to the Azure openi Studio
+
+okay so uh see here you won't be able to
+
+find out this uh model deployment once
+
+you will click on this manage deployment
+
+so you will get one studio and that
+
+studio is called a your open a studio
+
+it's not Azure Studio that is different
+
+one that's a different one different
+
+service aurei Studio it is azure openi
+
+studio so let it open and then I will
+
+show you how you can access the various
+
+model from here and how you can deploy
+
+it and how you can create your own
+
+custom chat engine if you are enjoying
+
+the session guys please hit the like
+
+button please mention inside the comment
+
+section uh if you have any concern any
+
+doubt or whatever in your mind guys so
+
+see my a your openi studio is ready and
+
+see there are different different option
+
+now let me uh zoom in and see left hand
+
+side you'll find out various option now
+
+uh first guys uh what I can do uh let me
+
+click on this model so what all model is
+
+there so if you will check in the model
+
+in the in this model section find out
+
+the various model let it uh
+
+load okay so these are the model guys
+
+which is available in this specific
+
+reason the reason is what the reason is
+
+the reason is esus2 so see the model
+
+version created at which day okay now
+
+here stat is succeed and deployment yes
+
+it is available for what for the
+
+deployment okay so uh now guys apart
+
+from this model one more thing you need
+
+to check so guys here is a deployment so
+
+I haven't deploy any model over here and
+
+if I didn't deploy it guys definitely I
+
+cannot use it so uh for the deployment
+
+simply I can uh create a new deployment
+
+from here and I can deploy okay that is
+
+completely fine now EX in subscription
+
+key or wrong in point make sure okay not
+
+an issue let close it don't know why it
+
+is giving to me now coming to the next
+
+part here Chad so once I will click on
+
+this Chad so this is what this is my
+
+playground now here you will find out
+
+two thing first is what first is chat
+
+and second is completion so definitely I
+
+will give you the differences between
+
+this chat and this completion what is
+
+the difference in between now uh here
+
+one more is there Delhi is there right
+
+Delhi I think we all know about Delhi
+
+okay so here see it is telling to me
+
+this deployment is successfully as soon
+
+as I opened it and is like uh telling to
+
+me your deployment is done if you will
+
+go and check inside the model guys you
+
+will find find out this uh sorry inside
+
+the deployment you'll find out what
+
+you'll find out this Delhi okay because
+
+whatever model I want to use so first uh
+
+I will have to deploy that model then
+
+only I can use those model so
+
+automatically it got deployed uh and it
+
+will be uh it will happen for you as
+
+well once you will click over here it
+
+will deploy now I'm coming to the chat
+
+completion API now inside the chat
+
+completion API see uh here it is telling
+
+to me you don't have any deployment see
+
+Delhi is just for this one for this a
+
+particular one but this Delhi is not for
+
+of this one we cannot create an image
+
+from here and similar to this one we
+
+have this completion API so if you
+
+remember guys uh I don't know you know
+
+or you don't know see uh this open AI if
+
+you will go and check with the open a so
+
+there they have two type of API the
+
+first is called uh chat completion API
+
+and the second is called completion API
+
+so completion API actually they were
+
+using they will they were using inside
+
+the previous version of the open AI I
+
+think in 0.26 maybe 0.26 or 29 the open
+
+a module you can simply check now this
+
+chat completion API actually it's a
+
+latest one okay and like still in the
+
+latest version they are using this chat
+
+completion API and I will be showing you
+
+the code as well by seeing the code you
+
+can identify it if you want to know more
+
+about this chat completion and
+
+completion API so it's see don't go with
+
+the completion API always go with the
+
+chat completion API but still you want
+
+to know simply you can search that
+
+completion API versus completion API so
+
+simply you will get how many uh like
+
+platform and all and even uh they are
+
+explaining you over the uh like openi
+
+developer Forum as well see here is a
+
+complete detail so now this chat
+
+completion API actually it's a latest
+
+one and we're going to use it even over
+
+the St overflow also you will find it
+
+out so simply you can click over here
+
+and you can read about it complete
+
+details and all okay I hope this thing
+
+is clear now coming to the deployment so
+
+guys uh before deployment I would like
+
+to clear one more thing over here so
+
+that is nothing that's a quota right so
+
+Kota or the type of the deployment
+
+anything you can say now just click over
+
+here and here once you will click so you
+
+will find out we have a different
+
+different type so different different
+
+type means what so different different
+
+type means standard provision okay
+
+global standard other so different
+
+different type right so now see whatever
+
+model is there inside this standard okay
+
+inside this particular segment I can
+
+access all these model but whatever
+
+model is there inside the provision for
+
+this one I will have to make a specific
+
+request okay or I will have to make my
+
+subscription okay so I will have to take
+
+this pay as you as you go plus one the
+
+premium one then only I can access or
+
+specifically I will have to make a
+
+request for increasing my quota right
+
+and yes definitely charges and all will
+
+be associated with this provision if you
+
+are going to purchase this subscription
+
+if you have a standard subscription then
+
+you can access these many model this
+
+particular model now let me show you how
+
+you can do it so guys once you will go
+
+in the deployment okay now just click on
+
+this create new deployment from here you
+
+can select your model so let's say I'm
+
+going to be select this uh GPD 3.5 turbo
+
+so yes this GPD 3.5 turbo is available
+
+for me inside this ex standard Cota now
+
+this is telling to me because this fine
+
+tuning is not available inside this
+
+particular reason and because of that it
+
+is giving me this particular warning no
+
+not an issue I can close it I can ignore
+
+it now uh see this deployment type is
+
+what standard now other than this one if
+
+I'm going to select any other model
+
+let's say if I'm going to select this
+
+dpd 332k now see it is uh coming to this
+
+provision manage and here if you will go
+
+if you will see this uh warning so it is
+
+telling to me requesting for more Kota
+
+just the existing Kota means I will have
+
+to increase the Kota specifically I will
+
+have to make a request for this
+
+particular model so once I will click
+
+over here I'll will be getting it so
+
+I'll be getting the complete form okay
+
+so yes you can fill out that form and
+
+then you can raise your quota see once
+
+you will go inside the provision and
+
+which model guys this one now just click
+
+over here this uh to this one so let me
+
+show you just wait I think I can hide to
+
+myself okay this one guys see here is
+
+the option request Kota so once you will
+
+click over here on this request Kota so
+
+it will contact your Microsoft account
+
+team to request provision through P Kota
+
+okay fine so I think I will have to take
+
+a advanced subscription for accessing
+
+this particular model I believe this
+
+thing is getting clear to all of you now
+
+uh for some model actually you can
+
+access from here itself so let's say if
+
+I want to access this particular model
+
+gp3 gp4 turbo uh let's uh see okay no
+
+for this one also I think I will have to
+
+make my uh I will have to like take a
+
+advanced subscription got it so uh
+
+whatever thing is there inside the
+
+standard I'm going to use only those
+
+particular model I believe this thing is
+
+clear to all of you now let's make a
+
+deployment of few models and let's start
+
+to use it for our chatting purpose or
+
+for the content generation and all so
+
+click on the deployment and here we can
+
+easily like do our work with our GPD 3.5
+
+or Turbo as well and here in this
+
+particular regon see in the standard
+
+region this GPD 4 is also available so
+
+yes we can use this gbd4 for what for
+
+the images for the image related thing
+
+now uh let me select first GP 3.5 turbo
+
+and here I can write the deployment name
+
+so this is going to my chat engine and
+
+here guys see this is a token limit
+
+token per minute uh rate limit so what's
+
+the meaning of it token per minute rate
+
+limit so in 1 minute actually how many
+
+tokens you can proceed okay so you can
+
+increase it according to your
+
+requirement token means what the number
+
+of words uh so inside one sentence like
+
+how many tokens is there how many words
+
+is there it is asking about to this one
+
+right this second is one so
+
+corresponding to this limit see if you
+
+are going to increase the limit so this
+
+limit is also increasing so this limit
+
+actually RPM it is showing to you
+
+request per minute okay so in uh 1
+
+minute how many request you are making
+
+right to your API so I hope this two
+
+thing is clear it is pretty much
+
+important now I'm keeping it low because
+
+I for this practice I not required this
+
+much of like RPM and this TPM I can
+
+simply keep it 30,000 only that's it now
+
+what I can do I can simply click on this
+
+create and see my deployment is going on
+
+so once I will deploy I can access the
+
+model inside this chat section see now
+
+apart from this one guys uh we can take
+
+one more model so the model is what gp4
+
+so which model guys gp4 Omni I'm going
+
+to be select gp4 Omni because it is
+
+available inside this ex standard price
+
+so just click over here and then you can
+
+write the name of the deployment this is
+
+what your this is your Omni model then
+
+uh you can select the PPM and RPM and
+
+then finally you can create
+
+so see your model is getting created and
+
+now it's successfully deployed so what
+
+you can do you can go inside this chat
+
+and now you won't able to find out that
+
+a particular issue so see this is what
+
+this is my complete chat playground this
+
+is my complete chat completion API so uh
+
+if you want to select the model simply
+
+you can uh click on this drop down I
+
+think it is visible let me uh let me
+
+switch off my video this one guys chat
+
+engine in the deployment itself you can
+
+see this one so once you will click over
+
+here you'll find out this chat engine
+
+and this Omni model this Delhi it is
+
+only for this particular playground okay
+
+it is not for this chat Playground now
+
+uh what I can do I can use this
+
+particular model so let's say I want to
+
+use this chat uh engine simply I can
+
+write my message hi and what I once I
+
+will hit enter guys so here uh see it
+
+will be generating one error and this is
+
+not for me this is for the everyone so
+
+whoever uh basically it is uh using this
+
+particular model xess dened to invalid
+
+subscription key or wrong API end point
+
+make sure you provide a valid key for an
+
+active
+
+subscription and current API okay I
+
+think I was getting this uh 5 minute
+
+error because within 5 minute actually
+
+they are going to be active this
+
+deployment let me check with other
+
+message
+
+hello access deny due to invalid
+
+subscription key or wrong API endpoint
+
+is it wrong guys okay just give me a
+
+second let me check
+
+it so here guys you can see my uh chat
+
+is working now my model is working what
+
+was the issue so here I just restarted
+
+my payment okay my subscription
+
+basically whatever subscription I have
+
+added and it is working I think there
+
+was some issue with this uh subscription
+
+method I just restarted it now you can
+
+see it is active and if I'm going to
+
+make a chat here I'm able to do so let
+
+let me show you from scratch only so
+
+this is what this is my model let's see
+
+this is what uh this this three model I
+
+have deployed uh let me open this uh
+
+chat engine first of all I'm clicking on
+
+this chat engine now click on this open
+
+in playground so once you will click on
+
+this opening playground and here uh it
+
+is opening inside the playground itself
+
+see directly now I can ask any questions
+
+so I can say here uh hi tell me about
+
+the uh Indian
+
+Capital now see what I'll be getting so
+
+I'm getting about the Indian capital I
+
+can regulate my response as well so
+
+first of all let me give you this entire
+
+uh like overview of this entire
+
+interface so what it is all about now U
+
+see here you will find out this clear
+
+chat option just click on this clear
+
+chat and it will be gone now a
+
+playground setting if you want to set
+
+any uh setting over here anything right
+
+you can do let's say language
+
+subscription and all and there are so
+
+many setting you can manage according to
+
+your requirement I will show you the uh
+
+like speech also like how you can
+
+convert from piece to text like I will
+
+show you the use of the whisper model
+
+and that is in my pipeline only now let
+
+me close it and then view code so here
+
+you will find out the code uh the entire
+
+code guys so by using this particular
+
+code you can connect right you can call
+
+this API using the python python SDK I
+
+will show you this one uh like right
+
+after this configuration and all so
+
+first of all let me uh show you a few
+
+more thing and then I will come to this
+
+completion API chat completion API then
+
+uh apart from this one left hand side
+
+you can Define your prompt and all so
+
+see here left hand side what you can do
+
+if you have any sort of a template promp
+
+template uh you can select from here
+
+okay otherwise uh what you can do so
+
+like don't select any sort of a promp
+
+prompt template here simply you can
+
+Define your uh prompt okay this is
+
+nothing this is a behavior of your
+
+system system behavior and then uh here
+
+if you will go and check this code
+
+inside the Json so you will find out the
+
+complete detail who is replying who is
+
+giving the answers and all everything
+
+the role is system and here content is
+
+what so content is what content is
+
+nothing it's it is representing the
+
+prompt now let's say if I'm going to ask
+
+say something hi hello how are you so
+
+you will find out that who is giving
+
+this response so user is asking this
+
+thing user this is the question of the
+
+user and here uh this is the answer from
+
+the system so system is my assistant
+
+means my main model and here this system
+
+actually it is representing to the
+
+overall behavior of what over behavior
+
+of the model I hope this thing is clear
+
+to all of you now see here is what add
+
+your data I will come to this one also
+
+how you can create your custom
+
+application how you can add your data
+
+and then finally we'll deploy it from
+
+here itself now one more thing so just
+
+click over here uh and this one past
+
+message include how many message you
+
+want to include it is related to the
+
+history let me show you uh regarding
+
+which I'm talking about so see guys this
+
+one pass message include now see the
+
+option over here for what for the uh
+
+like messages how how many message you
+
+want to include then other than this one
+
+here is a parameter so the different
+
+different parameter Max response how
+
+many you how many one actually you want
+
+to get a response this is the maximum
+
+one temperature means what the
+
+creativity of the model here top P you
+
+can read about this top P actually it is
+
+also related to the creativity
+
+probability and all related to the
+
+generating word stop sequence if you
+
+have any specific sequence where you
+
+want to stop you can make you can write
+
+over here frequency penalty what should
+
+be the word what should be the fre
+
+quency of the word that also you can
+
+decide present penalty what you want
+
+don't want to present present right okay
+
+that specific thing also you can mention
+
+over here so many things you can
+
+regulate it is a complete uh API okay
+
+chat completion API now uh this is clear
+
+now coming to the completion API guys so
+
+this is a previous version this uh
+
+completion API is nothing uh actually
+
+this is what this is the previous
+
+version old version how we can check out
+
+let me show you so let's say if I'm
+
+writing High here and it will generate
+
+the answer no no doubt no issue the
+
+completion orientation the specified
+
+model Delhi okay so it is saying that
+
+first please change the model uh where
+
+is the model guys this is the option for
+
+the model uh chat engine is fine great
+
+now finally I can check so let's see
+
+whether it is generating or not so yes
+
+it is generating now I think see it is
+
+generating related to what what Rel to
+
+the code uh I think I will have to
+
+define the chat context from here like
+
+let's say I'm going to be Define this
+
+question answering so here what I can do
+
+I can ask any sort of a question and
+
+according to that is going to generate
+
+answer how many NE are is there let me
+
+generate it let's see what I'll be
+
+getting it's it it is giving me a
+
+predefined template okay now I can ask
+
+my uh my question basically so what is
+
+your name let's say so if I'm going to
+
+ask any custom question definitely it
+
+will be able to generate the answer so
+
+no the model consider model modifying
+
+your prompt and parameter to behavior
+
+okay so I think guys I will have to give
+
+in this specific format only means
+
+related to this one only uh whatever
+
+question whatever uh context they have
+
+given likewise you can check but yes
+
+again uh there is a chat board also you
+
+can check okay uh so let's see what I
+
+can ask over
+
+here uh hi so let's see what I'll be
+
+getting with this particular one no text
+
+by the consider modifying your prompt
+
+and parameter to improving the PRS okay
+
+fine so I think guys uh we'll have to
+
+check what I can do from here but yes uh
+
+you can explore it and you can run it
+
+now uh the main thing basically which I
+
+want to show you over here that is what
+
+there is a view code now once you will
+
+go and check with this view code so you
+
+will get the code and guys this code
+
+actually it is uh representing to the
+
+previous one okay the uh code related to
+
+the previous version definitely you can
+
+copy and you can check it
+
+now uh coming to the next Point here see
+
+Delhi so if I'm such if I'm writing
+
+anything over here uh inside this prompt
+
+let's say I'm writing uh give me a
+
+image where where person or where boy is
+
+cycling and girl
+
+City behind him so this is what this is
+
+my prompt now let me generate it and
+
+let's see what I'll be getting
+
+here will take some time and again uh
+
+whatever images you are
+
+generating like with it the price is
+
+associated
+
+okay fine so see guys how like uh like
+
+they have generated the image so here is
+
+a boy and the girl is sitting behind
+
+this boy anything you can gener you can
+
+download it from here you can delete it
+
+and one more thing show code so just
+
+click over here on this show code and
+
+here guys you will get the code as well
+
+now let's see how we can use this python
+
+SDK right for accessing this model so
+
+first of all uh these three things is
+
+required first is what endpoint URL then
+
+API key and then this code let me copy
+
+this endpoint URL and see already I have
+
+created this uh environment and all
+
+everything so here my folder name is
+
+what your openi crash course inside this
+
+one this is my environment EnV here is
+
+my file where where I didn't I haven't
+
+written anything and this is my require.
+
+txt file okay so what I'm doing I'm
+
+creating one more file the file name is
+
+going to be deli. py now inside this
+
+del. py uh the first thing is what
+
+endpoint URL so let me keep it this
+
+endpoint URL and guys this is a
+
+confidential thing so please don't
+
+expose to anyone and after the session I
+
+will also delete it so no one can access
+
+it so here is what here is my endp point
+
+URL I can do one thing I can create EnV
+
+file also over here and there also I can
+
+keep my confidential information and
+
+directly I can read it inside by file
+
+but as of now directly I'm mentioning
+
+over here in front of you only now the
+
+next thing is what API key so let me
+
+take the API key also from where from
+
+this code so I'm copying over here this
+
+API key now perfect now the third thing
+
+is what guys here I want to write a code
+
+so this is going to my code now let we
+
+copy it and here I'm going to be paste
+
+it so this is my code now see guys here
+
+uh we required what we required this see
+
+this this will be default by default for
+
+every uh like this will be by default
+
+for every model okay this
+
+24201 actually it is showing a model
+
+date so you can check out also I think
+
+it was visible inside this model section
+
+this one model this one created date
+
+okay so automatically by by default you
+
+will get that date okay now coming to
+
+the next point so here is what as your
+
+end point so what I can do I can remove
+
+this one and I can give my variable name
+
+here so let me keep my variable name
+
+then the third one is going to be API
+
+key so let me remove this API key from
+
+here and I can directly pass my variable
+
+so here is what here is my API key now
+
+coming to the next one so what we
+
+required so here we required this open
+
+AI so let me mention this open AI inside
+
+this re. txe and and yes I can download
+
+or I can install this require. txt
+
+inside this particular environment don't
+
+worry I will give you this all the
+
+command related to do related to this
+
+environment creation or this uh like
+
+related to this re. txt download and all
+
+I think many video many project you will
+
+find out over here also on this platform
+
+uh like from there easily you can learn
+
+these things but I will give you all
+
+these commands so here if install then
+
+iphr requirement. THD so see uh this is
+
+running and it is installing until what
+
+I can do I can check whether everything
+
+is fine or not so p is done then uh here
+
+is API key grade so this is what this is
+
+my method client image generate here I'm
+
+passing my model name Delhi okay here is
+
+what here is my prompt give me a image
+
+where is a y great and N is equal to one
+
+means the number of image so it will
+
+provide me what it will provide me a
+
+image URL so let me print this image URL
+
+so image uncore URL let's see what I
+
+will be getting over here so my
+
+installation is done if you want to
+
+check which version I have installed so
+
+here simply you can check with the open
+
+AI API open
+
+AI Pi okay so just search about this
+
+openi pii you will get the version of
+
+this openi pii
+
+130.3 now you can go and check inside
+
+the release history also so the
+
+completion API actually it was available
+
+in 0. X okay
+
+so it was available in this particular
+
+version in this 0.28
+
+0.281 so uh like from 1.x actually it is
+
+not available you will find out this
+
+chat completion API you can check out
+
+you can go and check by U yourself as
+
+well I don't have any issue so coming to
+
+the point now so everything is fine I
+
+can cross check also now once I will
+
+write python over here so I can copy
+
+this a your open and then I can paste it
+
+so if everything is fine I will be able
+
+to load it yes it is working fine for me
+
+now exit and then I'm executing this
+
+particular file so for executing this
+
+file simply I need to write this Python
+
+and this file name Deli do3 I hope it is
+
+visible to all of you if not let me
+
+switch off my camera so here see what I
+
+need to write I need to write this Deli
+
+3. py or deli. py only this is my file L
+
+now see uh I'm running it and if
+
+everything is fine guys it is going to
+
+generate this URL at the end it will
+
+provide me a image URL so it is calling
+
+that API and after calling this API I
+
+can access the image just wait just a
+
+second great I'm getting my URL now just
+
+click over here and see here is what
+
+here is your image this one guys so
+
+again like it has gener different image
+
+because second time I'm calling it
+
+and yeah I hope you are seeing the image
+
+and you will be able to generate it also
+
+now you can write a logic wherever you
+
+want to save the image wherever you want
+
+to generate a number of image but again
+
+I'm saying cost is associated with it if
+
+you want to check the cost definitely
+
+you can check out you can go inside the
+
+price section okay I think I already
+
+shown you that uh where is a price this
+
+one pricing now just go inside the price
+
+section and check the price of the Delhi
+
+the Delhi price is quite High
+
+uh where is the Delhi Delhi Delhi oh
+
+here is a Delhi image model is not
+
+available in this particular region I
+
+think I'm working in es us so see Del e
+
+uh $4 for 100 images okay and $8 for
+
+this particular configuration and for HD
+
+actually $12 so this is the complete
+
+configuration uh sorry this is the
+
+complete pricing and all for what for
+
+the delhi now I hope how to call this
+
+python or how to call this openi API Aur
+
+open API using this python SD now let me
+
+revise this code so what we required we
+
+required this endpoint URL and this API
+
+key and you have to mention inside this
+
+particular class okay we are creating a
+
+object after passing this API version
+
+means date then a your Endo here is a
+
+endo and this API key this API key and
+
+this is what this is my client now using
+
+this client I'm creating this I'm
+
+calling this image then generate and
+
+finally I'm passing my uh like config
+
+configure parameter and then finally I'm
+
+able to generate the image okay now
+
+similar to this one I can call the GPD 4
+
+gpt3 model as well so let me write the
+
+code inside this chat completion API so
+
+what I'm doing guys I already written
+
+the code let me give you this particular
+
+code okay and then let's try to do it so
+
+here guys what I'm doing see this is the
+
+code now I have to remove this uh
+
+python. EnV because we are not going to
+
+use it as of now directly we are copy I
+
+am keeping this API ke all over here
+
+itself in inside the file so API version
+
+is this one oh let me keep it by default
+
+let me remove this uh API key and Ando
+
+because it is from my previous code I
+
+want it uh from my latest code so this
+
+is what this is from my latest code let
+
+me copy just a second here I'm going to
+
+be copy it and after copying I can
+
+simply keep inside my chat completion.
+
+py so here is what tell me guys here is
+
+my chat completion
+
+sorry here is my AP endpoint API and
+
+this uh endpoint API and this API key
+
+now uh let me keep this endpoint API
+
+over here so this is the one then I can
+
+keep this API key over here okay perfect
+
+so let me remove this unnecessary thing
+
+if it is not required uh then I can
+
+simply remove fine perfect so now
+
+client. chat. completion create and here
+
+is what what is my model name guys tell
+
+me chat in
+
+if you will go and check with the model
+
+name so you'll find out chat engine let
+
+me show you my model name so once you
+
+will go with the mod deployment you will
+
+find out your name chat e n g i n e that
+
+spelling should be correct otherwise it
+
+will give you the error e n g i n e
+
+great now here is what here is my user
+
+which is asking this question what is
+
+the capital of Delhi so let's see
+
+whether I will be able to get it or not
+
+so I'm converting this completion into
+
+what into the Json and I'm simply
+
+printing it okay so let's see what I
+
+will be able to get if if I'm running
+
+this particular chat completion API now
+
+uh let me switch on my camera so that
+
+you can take the access of the entire
+
+scam here I'm writing python python chat
+
+completion py now uh it is generating
+
+guys and if everything is perfect you
+
+will get a response see here is what
+
+here is my response in the content
+
+actually this is in know Json form so
+
+definitely you can extract the content
+
+from here so just uh like write your
+
+logic and you can ex the content so here
+
+it is giving you the answer Delhi is not
+
+a country so it is not having a capital
+
+however New Delhi is the capital of
+
+India so it is giving the correct answer
+
+because we are using what we are using
+
+tell me we are using the GPD model
+
+behind so let me ask any other question
+
+I can simply ask how many stars how many
+
+stars in the universe so this is my
+
+simple question guys let's see it's not
+
+a simple uh let's see what this model is
+
+giving to me so here uh I'm calling this
+
+particular API python chat completion.
+
+py and I'll be getting my answer so as
+
+AI language model I don't have an
+
+accurate answer to this question
+
+according to estimate by scientist there
+
+is potentially 100 billion star in our
+
+Milky Way galaxy only and there are
+
+billion of galaxy in the observ universe
+
+however the exact number is Stars and
+
+unknown great guys so yes my chat
+
+completion API is working fine using
+
+what using this python SDK now uh I hope
+
+this uh thing is clear to all of you if
+
+it is clear guys please hit the like
+
+button and you yes you can write uh in
+
+the comment section also sir everything
+
+is perfect and everything is working
+
+fine in my system also so now in the
+
+next thing what I have to do see we
+
+understood how we how we have to access
+
+this chat completion API now uh if I can
+
+keep my own document here and if I can
+
+chat with that so how great it would be
+
+tell me yes or no right so what I'm
+
+doing so here I'm going to be add my own
+
+data source okay so let's see guys if we
+
+want to add our own data how we can do
+
+that so first of all you need to click
+
+on this add a data add a data sources so
+
+just click over here and then it will
+
+give you the various option just click
+
+on this drop down and see here is a
+
+Azure blob Azure AI search elastic
+
+search URL web address upload file so
+
+guys I'm going to be upload the file
+
+from my local system so let me click on
+
+this upload file and then here you can
+
+see it is asking me a name okay so first
+
+uh okay not name actually it is asking
+
+me select a your blob storage resources
+
+so first I will have to select the
+
+resources as you can see it is giving me
+
+an error because I don't have any Aur
+
+blob resources I haven't created by
+
+created it by myself so what I will do I
+
+will click on this link which is uh
+
+presenting uh by over here which is it
+
+is representing over here now let me
+
+click on this link create a new Azure
+
+sources so I will be getting the page
+
+and apart from this one it is asking me
+
+about this AZ your AI search also okay
+
+so this both thing I will have to add
+
+over here so let me create this one as
+
+well now uh create a storage account so
+
+here you can see Resource Group this is
+
+the subscription now I'm going to write
+
+a name name for what name of this uh
+
+storage account so name is going to be
+
+crash codes
+
+okay so this is going to be a name now
+
+what I will do I will keep everything
+
+same over here I'm not going to change
+
+anything just click on this review and
+
+create okay so once you will click on
+
+this review and create first it will be
+
+validating and then it's going to be
+
+create this storage account now apart
+
+from this one what I can do I can create
+
+this AO AI search also so let me write
+
+let me select the resource Group crash
+
+course and here I'm going to write a
+
+service name so uh let me write the
+
+service name service name is same crash
+
+course so this is my service name and
+
+see the reason is what best us so keep
+
+it by default and then create it now uh
+
+here you will find out pricing tire so
+
+standard uh basically 160 GB partition
+
+per partition maximum 12 replicas
+
+maximum 12 partition okay and maximum 36
+
+suchar unit so it is providing you this
+
+particular configuration for what for
+
+your uh system for your chat for your
+
+chatbot which you will be creating I
+
+will be showing you how you like in some
+
+time you you will get to know about it
+
+so just create over here on this review
+
+and create and then finally you can
+
+create it so let is uh let it validate
+
+and then finally you can create on this
+
+create on create one so see my storage
+
+is created you can uh go to the
+
+resources and you can check and in
+
+sometimes this will be also ready it is
+
+a submitting the deployment now both I
+
+can select over here so first let me
+
+check with The Blob storage whether it
+
+is coming or not just refresh it and
+
+here see crash course is coming coming
+
+now let me check as your need permission
+
+yes you can provide the permission also
+
+so it is asking about this term on
+
+course for what for the uh like cross
+
+reason so let's say if you have created
+
+your storage in the west us and if you
+
+want to access inside the East us how
+
+you can do it it is giving you the
+
+option let me switch of the camera see
+
+turn on course just click over here on
+
+this turn on course it will be done now
+
+here is what a your AI search resources
+
+just refresh it and you will get it over
+
+here the Scrat course see this one now
+
+you can write your index name index name
+
+is what like where actually you are
+
+going to be store your data okay that
+
+particular index so here the index name
+
+again what I can do crash course so the
+
+same every name actually I'm going to
+
+keep the same only so that I won't be
+
+having any sort of a confusion now just
+
+click on this next and it is asking
+
+about the file so which file you want to
+
+be store over here which file actually
+
+you want to keep it over here now just
+
+browse the file and here inside my Lo
+
+system itself I have one file let me
+
+show you so guys this is the file this
+
+shoe let me show you what I have inside
+
+this shoe file okay which I'm uploading
+
+so let it uh upload the status is
+
+spending until I can show you this shoe
+
+file so I created it by myself it is my
+
+custom file okay so here is what uh just
+
+a wait let me open
+
+it this is the file guys and inside this
+
+file you can see there is a detail of
+
+the shoe okay Nike ear XX plus sneaker
+
+description of the shoe and then style
+
+release date style code and every uh
+
+detail actually you will find out
+
+related to the shoe now the other one
+
+also then three shoes I kept uh just a
+
+small data so that it won't take too
+
+much time for creating the index and the
+
+final one because at the end it's going
+
+to perform the similarity search uh I
+
+will show you which uh search actually
+
+is available over here here you won't be
+
+able to find out the vector similarity
+
+search you will only find out the
+
+keyword similarity search okay so uh now
+
+what I can do uh I I kept the file over
+
+here so first of all let me close it and
+
+then this is the file guys is spending
+
+and upload file okay I think I need to
+
+click on this upload file and it is
+
+uploaded now just click on this next and
+
+then it is asking about the Chun size so
+
+chunk size what by default I'm keeping
+
+one24 means my data is going to be
+
+convert into this one24 Chun me inside
+
+one Chun actually I'll be having this
+
+much of tokens so uh now you can take
+
+the search type so I only have this
+
+keyword search over here I don't I'm not
+
+having this eding search so that eding
+
+search is available inside the Azure eii
+
+Studio this is a your uh like this is
+
+what guys tell me this is AZ your openi
+
+studio okay and I will be showing the
+
+updated version of it as your AI Studio
+
+let on so just click on this next and
+
+then here you can review your entire
+
+detail and finally save the dogs right
+
+so your dog is safe so see injection
+
+process is going on and it's going to be
+
+convert your data into what into the
+
+Chun I don't don't have that much of
+
+data so by default it will be taking
+
+care of taking care uh take care of each
+
+and everything whatever is there inside
+
+the file so let it create and after
+
+creating it guys what I can do I can ask
+
+any sort of a question over here related
+
+to this particular document it takes
+
+some time it will take like one or 2
+
+minutes so let it upload
+
+guys now my data is ready now my index
+
+is ready see here uh it is turning to me
+
+data source is what so here is what
+
+upload file name chunk size every detail
+
+it is giving to you so what you have to
+
+do first you have to check and then
+
+finally we are going to be deployed so
+
+how you can check simply you can uh
+
+write your message and let me switch off
+
+this Jason so yes how I can assist you
+
+so I can simply ask can you tell me the
+
+price of so which price let me take a a
+
+shoe name from here Nike ear Max Plus so
+
+Nike ear Max Plus Nike ear Max Plus okay
+
+let's see whether I'll be able to get
+
+the answer or not it is checking from
+
+where from the document itself so the
+
+original price of this nikar Max is what
+
+150 USD you can check out inside the PDF
+
+and yes the original price is 150 USD
+
+let's ask the different question Nike
+
+slide okay or Nike sandal so here what I
+
+can do I can ask that uh what is the
+
+store location so let me ask over
+
+here can you tell me the store the store
+
+location the store location of
+
+Nike or sending so let's see what I'll
+
+be getting over here so let me hit enter
+
+and see here here here here according to
+
+the the restore location of Nik s is
+
+bakur Nepal correct guys so it is
+
+working fine I can give the thumbs up
+
+and my chat bot is working over here now
+
+if I want to deploy if I want to make it
+
+available for everyone so how I can do
+
+it so here right hand side you can see
+
+the deployment option okay so just click
+
+on this deployment and here is it asking
+
+how you would like to deploy a new
+
+co-pilot in the copilot Studio or a new
+
+web app so I want to deploy it as a new
+
+web app so just click over here on this
+
+new web app you can select the name so
+
+here the name is what uh I can write to
+
+app okay so here you can select the
+
+subscription let me select the
+
+subscription then Resource Group here is
+
+my Resource Group location I can select
+
+East us only and then pricing plan is
+
+free so here uh which uh which app
+
+actually so which server you want to
+
+take or like it is asking about the pre
+
+pricing plan so I'm just keeping it free
+
+only I'm not keep like keeping any exard
+
+or something premium or something now
+
+enable chat history if I'm going to
+
+enable the chat history so regard to
+
+that actually I will have to pay so that
+
+also I'm not going to be enabl over here
+
+if I want to do it if I I'm ready to pay
+
+yes in that case I can tick mark on it
+
+but I I'm not going to be associate any
+
+sort of a cost other cost basically so
+
+let's deploy it directly after fck this
+
+menu of information just click on this
+
+deploy and see it is deploying two has
+
+already exist great so this is already
+
+there I can create a name other name so
+
+let's say cre Cod app this is what this
+
+my custom name now let's deploy it see
+
+whether it's going to deploy or not so
+
+here it is uh starting guys my
+
+deployment is started it will take some
+
+time around 2 to 3 minute so let it
+
+deploy so now see guys my app has been
+
+deployed so once it will be deployed
+
+right hand side you will find this
+
+option launch web app so just click over
+
+here on this launch web app and there
+
+you will find out one complete UI yes so
+
+let it load guys it takes some time and
+
+uh I hope you are able to understand
+
+this pretty simple process and don't
+
+worry later on I'll be using this Azure
+
+AI Studio which is updated version of
+
+this AZ your openi studio and we'll try
+
+to uh consume this Ando URL as well but
+
+as of now we are just seeing over here
+
+itself uh using this uh web app itself
+
+and automatically it will provide you an
+
+UI uh so let it load just a
+
+second and if you're enjoying this
+
+session please uh do let us know you can
+
+mention inside the comment section and
+
+whatever doubt you have directly you can
+
+uh mention in the comment or or you can
+
+ask me in the LinkedIn as well okay so
+
+let's wait guys just a second it is
+
+loading yes uh I think it is asking
+
+about the permission now once you will
+
+accept it you will get your UI
+
+so I think now it is done see this is a
+
+URL by using this particular URL you can
+
+access your UI see start chatting and
+
+this UI has been created by this contos
+
+so back in a back end actually this
+
+framework is working uh this quo
+
+framework is working you can check about
+
+it it is uh specifically for the UI and
+
+all now I can ask any question through
+
+my UI so once I will write hi uh
+
+definitely I'll be able to generate my
+
+answer so let's
+
+wait if you are running it first time it
+
+will take time and even for the like
+
+once will it will open also now it will
+
+take time in that also so yes I'm
+
+getting my answer hello I can assist you
+
+so you can ask the price of the Nike
+
+shoot can you share the price of Nike
+
+Air 2 Nike Air
+
+Max okay let's see uh whether I will be
+
+able to get it or not
+
+so it is $150 yes it is giving to me now
+
+uh I can ask now can you
+
+share the
+
+detail the detail
+
+of Nike
+
+sandal Nike
+
+SLE let's see what I'll be getting over
+
+here so let's uh look into the answer
+
+yes I'm getting my answer and it is
+
+giving me a complete detail related to
+
+this particular s and here it is giving
+
+the reference also so it is taking uh it
+
+is taking this output from this
+
+particular
+
+PDF got it I believe this is clear to
+
+all of you now see if you want to share
+
+you can share it from here you can copy
+
+the URL and you can share with everyone
+
+now uh through the Aur Studio we'll see
+
+how we can expose this endpoint URL in
+
+our uh application okay so how we can
+
+create the rest API and all everything
+
+so uh let me show you one more thing see
+
+uh we are talking about this completion
+
+API chat completion API and we have seen
+
+around the different different model now
+
+if you will look into the model so as of
+
+now we have this three model om is also
+
+there now uh just uh look over here just
+
+go inside the chat and if you want to
+
+chat with your Omni definitely you can
+
+select that also just uh look at right
+
+hand side okay deployment side see this
+
+one just click on the drop down and
+
+select the model once you select the
+
+model guys uh now whatever you want to
+
+ask to your Omni model can write over
+
+here you can mention and see it is able
+
+to generate the answer so first of all
+
+Let Me Clear the chat and let me reload
+
+it also oh I'm doing hard
+
+refresh and see my portal is done now
+
+let's uh try to change the model so from
+
+here I'm selecting this Omni okay
+
+everything is perfect and uh now let's
+
+ask the question so hi and here let's
+
+see finally guys it is generating the
+
+answer and definitely you can select any
+
+sort of a model from your end now I
+
+would like to show you few other model
+
+like this for and text to speech and all
+
+because those model also is being
+
+provided by what by the openi itself now
+
+if you will look into the openi API just
+
+uh search about the model so the gp4 GPT
+
+4. turbo GPT uh 3. five turbo and even
+
+this gp4 you can use related to the
+
+images and all okay if you have access
+
+of the gp4 over here you can upload the
+
+images okay you can upload the images to
+
+this portal and you can utilize it so uh
+
+one more thing I would like to show you
+
+over here that is what that's a uh like
+
+whisper model but this whisper model it
+
+is not available inside this model
+
+section see you cannot see this one so
+
+what I'm doing I'm uh opening one more
+
+time this uh particular open Ai and I'm
+
+creating one more API okay I'm creating
+
+one more service inside the different
+
+reason so uh let me go to the home here
+
+and here as your open Ai and let me
+
+create one more that is for what that is
+
+for specifically voice okay so I'm
+
+selecting a same resources CR course and
+
+my reason is what guys so this time
+
+actually I'm going to select this
+
+specific reason so here the reason is
+
+going to be no North Central us so in
+
+this particular region my whisper model
+
+is available so North Central us this is
+
+the South one in the South it is not
+
+available this one guys now I can write
+
+the name let's say the name is
+
+what uh transcript okay I can generate
+
+the transcript using the whisper model
+
+so here I can write this transcript and
+
+then pricing tier is a standard one now
+
+uh this is already there now what I can
+
+do my transcript let's see this is
+
+working or
+
+not so yes it is working no it is also
+
+not working here I can write audio to
+
+transcript so
+
+transcript ah fine I think this is
+
+perfect let's
+
+see my audio to
+
+transcript great now click on next and
+
+the provided subdomain name I think it
+
+is perfect now just click on this next
+
+then next then next let it validate if
+
+anything is wrong then definitely I will
+
+getting the error over here if
+
+everything is perfect I can do it great
+
+now just create it over here and let's
+
+see deployment is initializing and until
+
+what I can do guys here see I can keep
+
+my data okay so I'm going to create one
+
+folder my folder name is what data and
+
+inside this data folder I'm going to
+
+keep the data okay so what I did I
+
+created one file so let me show you my
+
+voice file and uh I'm going to be take a
+
+input from The Voice itself this time so
+
+let me uh show you that particular file
+
+I kept in my system only just allow me a
+
+minute where is a file file file
+
+your okay guys so here is a file now
+
+what I can do I can keep it inside this
+
+particular folder inside this data
+
+folder so reveal in the file explorer so
+
+here is what this is my project I just
+
+click on this data and inside this data
+
+I'm just pasting it so this is my voice
+
+file MP4 vile so I'm going to be open it
+
+and see listen what it is telling to you
+
+uh I think it is
+
+a you can hear it let me check my
+
+speaker is on or
+
+not so so it will be
+
+audible okay so is saying list out all
+
+the players right in the Indian team so
+
+this is the thing which is the recorded
+
+one now what I can do I can keep it this
+
+one let me uh contr C and here I'm going
+
+to be paste it down just a second uh
+
+okay it is already done now I'm going to
+
+be close it and my data file is over
+
+here so let me create a f let me create
+
+a file over here whisper. py so what I
+
+have I have my whisper. py now what I
+
+will do so let me go to the resource
+
+here and let me deploy the model just go
+
+inside this model deployment manage
+
+deployment and
+
+then deployment section so I think it is
+
+created great now just click on this
+
+create deployment new deployment and
+
+from here actually you can select the
+
+model now see text to speech is there
+
+and this whisper is also there whisper
+
+is for what for generating the
+
+transcript from where from the audio or
+
+video I just select this model and you
+
+can write the name so here I can you can
+
+write
+
+chck
+
+uh audio
+
+to text now here you can select this
+
+request permanent limit it is by default
+
+three keep it this only and then create
+
+it deployment is creating guys here you
+
+will get your whisper model now until
+
+what I can do see here I'm going to be
+
+access it using this python code so I'm
+
+going to be write my python code just a
+
+second let me give it to you so this is
+
+got guys this is my complete python code
+
+and here I required what I required my
+
+data file so let me keep it and yes
+
+everything is perfect see this is my
+
+complete python code for what for the
+
+whisper everything I will let you know
+
+everything I will be explaining you one
+
+by one now this load d.v is not required
+
+here Json is required request is also
+
+required I'm going to be remove this
+
+particular part because I'm keeping
+
+everything over here itself so first of
+
+all guys see this whisper model name
+
+Chad model reason is required okay
+
+reason in which reason we are working
+
+North Central us now along with this
+
+whisper model we'll have to create one
+
+chat model also so let me do one thing
+
+let me create one chat model and that is
+
+going to be GPT 3.5 turbo only so just
+
+click on this create deployment and here
+
+click on this GPD 3.5 turbo and you can
+
+write the name chat model okay and then
+
+create it so let it create guys I think
+
+it is done now uh we required couple of
+
+things so first of all what you can do
+
+you can select this audio to text and
+
+open inside the playground once you will
+
+do it you will get endpoint URL and uh
+
+you will get what tell me you will get
+
+the API key as well so scroll down here
+
+and let's see whether it is there or not
+
+oh I think you can directly pass the
+
+data over here you can put it down and
+
+you can check it is giving to you A View
+
+sample code yes this is the code guys
+
+maybe I'll be getting okay this is the
+
+complete GitHub which they have
+
+providing to you I required API key and
+
+what I required the endpoint URL so just
+
+a second I think I can get it
+
+from homepage itself just a second
+
+let's go back and let me check with this
+
+particular model open AI
+
+playground and if you will look into the
+
+view code yes I'm getting over here just
+
+copy it keep it over here this is going
+
+to be in point URL and I required the
+
+key also just copy the key from there
+
+and here is a key then keep it over here
+
+I require two thing guys this key and
+
+this endpoint URL now both are done now
+
+what is the name of this whisper model
+
+so in my case the name is what audio to
+
+text audio to text okay or video to text
+
+whatever you can do now here is what
+
+chat model I think this both are fine
+
+let me cross check whether it is correct
+
+or not just go back and you will get
+
+your model name inside the deployment S
+
+Audio to text and chat model both are
+
+fine now uh reason name is also correct
+
+So This is My URL okay so here I have to
+
+create my fin URL so endpoint URL and
+
+then whisper model name and this is my
+
+complete URL guys I have to request to
+
+this particular URL okay now here API
+
+key where actually I'm passing this
+
+particular key so this is my header and
+
+URL I need to prepare this two thing now
+
+I'm going to read my data so my data is
+
+available over here so let me change the
+
+name this is going to be data only not a
+
+voice data my data is available inside
+
+the data folder right I hope it is
+
+visible to all of you this complete
+
+thing then the next thing here is what
+
+here is my data then I'm going to open
+
+my file this particular file data file
+
+okay I'm reading my data okay so here is
+
+what here is my file and this is what
+
+this is my uh like URL so here is my
+
+data file which I'm passing over here
+
+and here is my head header inside the
+
+header actually I having a API key and
+
+this is my final URL this particular URL
+
+I'm requesting to this URL and I'm
+
+getting my final response so this is My
+
+URL guys okay which is being uh
+
+responded now uh after this one see here
+
+uh I'm getting my final response so from
+
+this final response I'm generating a
+
+text and here is what here is my user
+
+prompt now what I'm doing so this is
+
+going to my prompt me whatever we are
+
+saying inside where inside the video
+
+okay so that thing I'm able to get from
+
+here from here itself then I'm calling
+
+this a your open okay the chat model for
+
+the chat model only see client chat
+
+completion create and here is what here
+
+is my chat model this which I have
+
+defined because I have to generate the
+
+answer now whatever we are saying in
+
+inside the audio so if we are asking
+
+about the Indian player name I'm passing
+
+it over here this is my user promp okay
+
+so see I'm passing it inside this chat
+
+engine so uh this is my client guys
+
+along with endpoint URL and key we are
+
+going to configure we are calling this
+
+chat completion API to the chat model we
+
+are passing this uh system prompt and
+
+here is what here is my user prompt now
+
+finally I'll be printing the answer
+
+let's see whether it is able to generate
+
+the final answer or not here I'm going
+
+to clear my screen and let me hide to
+
+myself so that you can get the access of
+
+the entire if I'm searching over here if
+
+I'm writing here Python and python
+
+whisper. py with. py oh let's see
+
+whether I'll be able to get or not no
+
+module name request okay fine so here I
+
+can mention the request also inside the
+
+re. pxd request is here it is request
+
+now I can install it on my terminal so
+
+pip install request q u
+
+let's see guys uh whether I will be able
+
+to okay so it is installing so finally I
+
+can run my file so
+
+python
+
+whisper.
+
+py it is saying file not found error I
+
+think there is a issue with the file let
+
+me check guys what is a issue with the
+
+file whether it is correct or not so
+
+here I'm going to be copy the path and
+
+let me paste the complete path because I
+
+think there's a issue with the folder
+
+name uh here I'm going to keep it and
+
+inside this
+
+data the file name is what voice
+
+mp. MP4 perfect guys I have my file now
+
+I can put the double slash because it is
+
+required in the windows system and here
+
+is what here is my file guys okay let's
+
+see whether it is working fine or not
+
+now so Python with. py and here I'm
+
+going to execute it list out all the
+
+player name in the great I'm able to get
+
+my text and see guys here is what here
+
+is my answer I hope it is perfectly
+
+visible to you now you can pass any sort
+
+of audio file you can generate the text
+
+from there using the whisper model and
+
+here you can generate the answer using
+
+what using your chat model I hope this
+
+thing is clear to all of you now let me
+
+summarize what all thing we have learned
+
+so far so I'm going through with the pp
+
+itself now uh we understood guys about
+
+this Azure open a okay the complete
+
+detail introduction and after this one
+
+we have seen so how you can access the
+
+Azure open AI so we have seen the
+
+playground chat completion API different
+
+different model gbd4 g3.5 I shown you
+
+standard quota provision quota
+
+everything pricing detail and all I hope
+
+this is perfect now my next point is
+
+going to be a function calling using a
+
+your open a so if you want to make a
+
+function calling how you can do that now
+
+apart from this one fine tuning and this
+
+a your AI studio so this will take some
+
+time this a your AI Studio but fine
+
+tuning and function calling it won't
+
+take any time okay like that much time
+
+let's start with the function calling so
+
+guys let's try to understand the basic
+
+and the fundamental concept of the
+
+function calling and then we'll go for
+
+the python implementation so here uh let
+
+me open my Blackboard on my Blackboard I
+
+kept one image and by using this image I
+
+will try to explain you the fundamental
+
+concept of the function calling so uh
+
+here let's say my user is asking a query
+
+so here is my user and he is asking a
+
+query uh through the chat interface now
+
+what is the chat interface guys so chat
+
+interface uh it could be any UI UI of
+
+the chatboard and QA system so here it
+
+is calling okay so whenever I'm writing
+
+a qu query it is calling to my openi API
+
+through the chat completion API itself
+
+so I'm going to be Define my chat
+
+completion inside my Cod and then we are
+
+calling this openi API now inside this
+
+chat completion API I'm going to Define
+
+one function okay so this function it is
+
+extracting the information from where
+
+from the user prompt so whatever prompt
+
+I'm going to be defined So based on that
+
+particular prompt it's going to be
+
+extract some information and then it is
+
+calling to some third party API okay and
+
+then from there itself it is fetching
+
+the information got it now uh I hope
+
+this thing is clear but let's try to
+
+understand it by using the example and
+
+then we'll try to implement that same
+
+example okay in the python code only so
+
+uh let's say uh here is a user now this
+
+user actually uh this uh wants to
+
+understand or this wants to know about
+
+the latest weather of the Mumbai now uh
+
+here is what uh here I'm calling my GPD
+
+model GPD uh let's say 3.5 now this GPD
+
+3.5 it does not know the latest weather
+
+of the Mumbai or any other city like
+
+Delhi bangaluru bopal indor whatever
+
+right now this uh openi actually openi
+
+model it I don't know the like current
+
+weather of the model so what it will do
+
+guys so inside this one what I will do
+
+so here I will be defining one function
+
+now this function okay it will take this
+
+location it will take this location and
+
+after collecting this location what will
+
+happen you know so it is going to be
+
+called this third party API for what for
+
+extracting the external information so
+
+here I got the location let's say I got
+
+the Mumbai now uh based on my code
+
+whatever code I'm going to be write
+
+whatever description I'm going to be
+
+write based on that let's say it's going
+
+to be called this weather API we e a t h
+
+e r weather API okay now now this
+
+weather API based on the location it is
+
+providing me a information and then this
+
+information is coming uh the response is
+
+coming to my chat completion API itself
+
+and finally it is going to the user
+
+itself I hope the understanding is clear
+
+to you now if someone is going to ask
+
+you in the interview why we use this
+
+function calling what is the use of this
+
+open a function calling so simply you
+
+can say that so this model this uh this
+
+this particular model this llm model it
+
+does not aware about with the it does
+
+not aware with the latest information
+
+okay or the recent information so those
+
+information we can fetch externally from
+
+outside and there this function calling
+
+comes we can extract the like necessary
+
+inputs from where from The Prompt itself
+
+and based on that I can call my further
+
+code for calling the external API for
+
+fetching the information I hope this
+
+thing is clear now let's try to
+
+implement it in a python so here guys uh
+
+let me do one thing let me so here all I
+
+created one file function calling uh f c
+
+okay fine this is fine now here itself
+
+I'm going to write my code so uh let me
+
+write the import statement import OS
+
+then uh here I'm going to be import one
+
+more module that is going to be a
+
+dequest then from uh open here itself
+
+I'm going to be open uh I'm going to be
+
+import this as your openi so let me
+
+import this as your open guys perfect so
+
+I have imported this now now what I'm
+
+doing I'm going to be create one method
+
+method name is going to be main now uh
+
+here inside this method uh what I can do
+
+I can test it whether it is working fine
+
+or not so I can simply write a testing
+
+over here so let me write this testing
+
+now what I can do I can call this
+
+particular method so let me call this
+
+method Main and here I can call it
+
+inside this if condition so if a name is
+
+equal to is equal to M okay now perfect
+
+I hope everything is fine uh so what I'm
+
+doing guys so first of all let me switch
+
+off my camera so that you can get access
+
+of my screen now what I will do so here
+
+uh actually I'm going to be run this
+
+particular file so simply uh I have to
+
+write this python function calling uh
+
+where I'm writing it guys just a second
+
+what is happening let me open the
+
+command prom I think that is fine now
+
+let me write here python function call
+
+great so if everything is fine guys I'll
+
+will be getting my testing okay perfect
+
+so I'm getting my testing now I have to
+
+write my further code so let me write uh
+
+the further code so first of all what I
+
+have to do guys so I have to Define my
+
+client uh I already shown you this uh
+
+chat completion API right so from here
+
+itself I'm going to take this client now
+
+uh let me copy this CLI and here I'm
+
+going to paste it inside my main
+
+function got it guys now this client
+
+actually it is required two things first
+
+is endpoint and the second is what the
+
+second is API key so let me Define this
+
+end point and this API key over
+
+here so guys this API key and endpoint
+
+from where I will collect tell me
+
+whatever model I'm calling okay uh so
+
+whatever model I'm calling from my aure
+
+open a so that particular endpoint and
+
+API key I'm going to be paste over here
+
+so uh I'm going to take it from here
+
+itself so let me take this endpoint and
+
+this API key I already shown you that
+
+how to uh created all right this uh
+
+model uh how to deploy it and how to
+
+generate this endpoint and API key now
+
+uh let me paste it over here so here is
+
+what here's my Endo now this is what
+
+this is my API key okay uh so I got both
+
+now fine now what I will do so after
+
+calling this one the next thing is what
+
+I will be defining the function okay now
+
+before defining the function let me do
+
+one more thing Let Me call this chat
+
+completion API over here so for the chat
+
+completion API simply I can write here
+
+client c l n great now I can write this
+
+chat okay now I can write the completion
+
+so here is what here is my completion
+
+then dot create right so here I got my
+
+create now inside this one I can mention
+
+about the model so where is my model
+
+guys here is my model now my model name
+
+is going to be chat model I already
+
+created it I think you know about it
+
+then uh what I'm going to do so here I'm
+
+going to be write the message so let me
+
+Define my message over here my message
+
+could be anything let's say my message
+
+is this one I'm going to be copy and
+
+paste uh this prompt which I already uh
+
+created now with that I think uh the
+
+idea will be more clear to you so here
+
+is my message guys see I'm saying you
+
+are assistant which is going to be
+
+replying me a weather information and
+
+then here I'm asking a weather of the
+
+Bal okay I can mention any City and it
+
+will provide me a information so instead
+
+of Bal let's say I'm writing Mumbai over
+
+here got it great so this is what this
+
+is my uh chat completion API now let me
+
+call it and let me check whether it is
+
+giving me a response or not or uh what
+
+it is giving to me actually now I simply
+
+I can collect this thing inside where
+
+inside this completion so let me write
+
+over here this completion now uh what I
+
+can do so let me uh get the output
+
+further so here I'm going to be print
+
+this Json that's it guys so everything I
+
+took it I took from the previous code
+
+itself and I haven't defined any sort of
+
+a function over here now I will be
+
+defining the function first let me check
+
+what will be my final output so uh let
+
+me clear my screen and here I'm going to
+
+be call this function calling. py uh
+
+let's see the output so here it is
+
+telling to me missing argument model
+
+model and Str Str okay so it is showing
+
+me some error guys just wait let me
+
+check line number
+
+25 uh line number
+
+25 then here it is telling to
+
+me
+
+create okay then missing required
+
+message and
+
+model St Str uh message and model maybe
+
+I missed something guys okay messages
+
+messages here the argument name is wrong
+
+messages great uh now let me check
+
+whether it is working or not great so
+
+here I'm going to be run it again python
+
+function calling and let's
+
+see so see what I'm getting here
+
+deployment message the API deployment
+
+for this does not exist if you can
+
+deploy within 5 minutes fine guys so
+
+here I think this API is giving me issue
+
+let me check whether it is correct or
+
+not so what I'm doing I'm just going
+
+through what through my aure API as your
+
+open API uh not this one okay session
+
+expired let me check guys fine I'm going
+
+to be login again so here simply I'm
+
+going to be write this as your open AI
+
+just a second let me open
+
+it here let me sign
+
+in then I will be getting my Azure open
+
+a fine then uh here is my crash course
+
+model and this is for what this for the
+
+transcript now now let me open this one
+
+and here is my model
+
+deployment and then manage
+
+deployment now uh inside this one I'll
+
+be having my models so let me check
+
+whether it is there or
+
+not great Telly chat engine Omni model
+
+and everyone is every model is here now
+
+okay perfect this is also fine now let
+
+me open inside the playground
+
+yes this is also I open now let me check
+
+with the view code and here is what here
+
+is my API sorry endpoint let me check
+
+with the end point whether it is correct
+
+or not I'm going to be paste it over
+
+here I think it is same now let me check
+
+with the op API key so I'm going to be
+
+copy it and here I'm going to be paste
+
+it guys this one if you want to keep it
+
+inside the EnV file you can keep it fine
+
+so this both thing are fine Now API and
+
+all everything is perfect and the model
+
+name is what
+
+chat model so let me check guys model
+
+name is correct or not so here we are
+
+providing with a token name
+
+now let me take the model from here okay
+
+the model name is chat engine that's why
+
+it was giving me a issue so let me
+
+mention the chat engine here it is going
+
+to be chat engine perfect guys n and my
+
+spelling is also correct great now let
+
+me run it and let me check whether it is
+
+working or not so simply uh I'm uh going
+
+to be clear the screen now let me switch
+
+off the camera and see python function
+
+calling. py
+
+yes so fine I'm getting my output and
+
+here you will find out so it is telling
+
+to me I am sorry I'm a AI language model
+
+and do not have a real access to the
+
+current weather right and however you
+
+can use device built in be app or search
+
+online for the readable beather sources
+
+so guys this uh
+
+this particular code actually it is not
+
+giving me a current weather as I told
+
+you that it is not capable this model is
+
+not capable so how we can do that so we
+
+are going to be fetch this information
+
+from the weather API okay so open a
+
+weather API now let me write over here
+
+open by the a map API so from this
+
+particular API I'm going to be fetch the
+
+information okay now here see once you
+
+will uh scroll down so it you will find
+
+out this current weather okay current
+
+weather data now just do one thing just
+
+uh click on this subscribe now once you
+
+will click on the Subscribe here you
+
+will get this free option okay free
+
+option Now using this particular code
+
+what you have to do you have to fetch
+
+the current weather data now uh here you
+
+require this API key okay for fetching
+
+the data now just click over here on
+
+this get API key now once you will do it
+
+guys you will be getting uh this
+
+particular page you can fill out the
+
+information let me do it over here so
+
+here I can write my username and uh I
+
+can write my passport already I did it
+
+guys so that's why uh it is uh not
+
+asking to me I saved it and it is uh
+
+giving me a directly now uh okay so I
+
+think create account maybe I can
+
+directly log in over here because again
+
+it will give me a issue so just wait let
+
+me log in directly I think I already
+
+logged in and here is what here is my
+
+API key just a second guys okay
+
+so see guys if you haven't created
+
+account you can create the account and
+
+you can get it now let me click on the
+
+sign in and here I can enter my email
+
+and password great I sign it now here is
+
+what here is my API key so this API key
+
+will be required for fetching the
+
+information for fetching the data okay
+
+so uh if you haven't created account
+
+guys first you will have to create the
+
+account then only you can get this API
+
+key now let me copy this API key and
+
+here I'm going to keep it somewhere
+
+inside my file only so let me open the
+
+file and here I'm going to be keep this
+
+API key as of now now one more thing
+
+will be required guys I have to create a
+
+URL okay a specific URL so uh let me
+
+show you from where actually you can get
+
+the URL so once you will go back so here
+
+just uh click on this one current
+
+weather just uh once you will click over
+
+here on this current weather so see this
+
+is the URL which will be required okay
+
+so how to make an API call for getting
+
+the current weather this one and and for
+
+that you will be required this latitude
+
+and the longitude and this API key API
+
+key we have already collected and
+
+latitude and longitude I will show
+
+longitude I will show you how you can
+
+get it so just copy this URL from here
+
+and then keep it somewhere inside your
+
+uh keep it somewhere inside your file
+
+only so this is the second thing now one
+
+more thing will be required see if you
+
+want to get this latitude and longitudes
+
+for that actually you will be required
+
+the location by using that particular
+
+location you can get this latitude and
+
+langit longitude now just scroll down
+
+here and there itself actually you will
+
+be getting the option you will be
+
+getting one more URL for fetching the
+
+latitude and longitude okay let me show
+
+you that as well so just scroll down
+
+scroll down and here see guys city name
+
+so once you will write the city name
+
+means once you will write a location so
+
+what you will get you will be getting
+
+the uh latitude and longitude of that a
+
+specific City just copy it and keep it
+
+over there I'll be showing you how to
+
+call each and everything after defining
+
+the function and all so uh I'm going to
+
+be keep it inside where inside my file
+
+itself got it so this three API so this
+
+three thing now what I can do I can
+
+replace this uh API key okay or what I
+
+will do directly I will be pasting
+
+inside the code itself and you will be
+
+getting now one thing I haven't talked
+
+about the function okay so first of all
+
+let me Define the function so that
+
+function basically it will fetch the
+
+location from where it will fetch the
+
+location from The Prompt itself right
+
+right and then we are going to be pass
+
+that location over here to the city name
+
+and based on that I'm going to fetch
+
+this latitude and longitude and finally
+
+I'll be generating my current weather
+
+based on my query getting my point now
+
+let's try to perform it so uh let me
+
+create a function guys so I already
+
+created a definition of the function I'm
+
+giving to you and here uh this is the
+
+definition so inside the definition the
+
+first name is what the first thing is
+
+the get weather this is the name of the
+
+function
+
+here is the description of the function
+
+okay description is what you can see you
+
+are you have to retrieve the time
+
+information data about a particular
+
+location and place simple uh description
+
+now parameter this is very much
+
+important guys this particular parameter
+
+now see uh here in the parameter
+
+actually we have given this location so
+
+this is going to my parameter and this
+
+parameter I will be fetching from where
+
+tell me this parameter I'll be fetching
+
+I mean this location I'll be fetching
+
+from The Prompt itself automatically it
+
+will take it or automatically uh like
+
+whenever we are going to be Define a
+
+function it will collect it from the
+
+location itself or if we are going to be
+
+Define the a few short prom okay let's
+
+say we are going to give a description
+
+and based on that I have to fet some
+
+information so that uh thing in that
+
+specific manner I will have to mention
+
+over here okay with those specific
+
+parameter so later on I'll be showing
+
+you that particular example as well but
+
+over here I hope this thing is clear
+
+this is a simple this is a simple
+
+function definition so which thing we
+
+required we required this location okay
+
+so function calling is done now coming
+
+to the next part so here I have to write
+
+a code for what tell me I have to write
+
+a code for the uh latitude and the
+
+longitude so first I will I will be
+
+giving the city name means the location
+
+uh which I'm fetching from where from
+
+The Prompt itself using this function
+
+and then I'm going to be pass it to this
+
+latitude and this longitude okay so uh
+
+one more thing guys I told you that over
+
+here inside this completion API I have
+
+to Define the function also so let me
+
+Define the function so here is what here
+
+is a function parameter and which I'm
+
+going to be defined inside my completion
+
+API fine so everything is perfect
+
+everything is clear now coming to the
+
+next part now if we want to collect okay
+
+if you want to collect this uh latitude
+
+and longitude so we'll have to write the
+
+further code so first of all let me
+
+remove this print statement as of now it
+
+is not required now just focus guys so
+
+here is my code okay I already return it
+
+let me give it to you this particular
+
+code and one by one step by step I can
+
+exper you so uh see uh this is the code
+
+guys okay just just focus now and I just
+
+just try to understand each and
+
+everything whatever I have written over
+
+here okay now the very first thing so
+
+let me align this entire code and uh I
+
+have to write it down just for saving
+
+the time and uh let me explain you this
+
+one this is a specific function for
+
+fetching the data great guys fine so
+
+let's uh discuss this particular
+
+function okay so let me switch off my
+
+camera so that you can get the access of
+
+the entire screen and here let me remove
+
+this also fine now just focus here so
+
+first of all guys what we are doing see
+
+we are going to be uh load this input
+
+okay sorry this output whatever output
+
+I'm getting from where from this
+
+completion API okay so here uh what I'm
+
+getting tell me I'm getting the output
+
+and this particular output I'm going to
+
+be defined inside this initial output
+
+okay inside this particular parameter so
+
+I have this Json let me check whether I
+
+have Json or not so here I have to
+
+import the Json got it so this is my
+
+Json now see here is what here is my
+
+initial output which I'm getting now
+
+from this particular output I'm going to
+
+be def I'm going to be F the location
+
+okay so I'm getting a location over here
+
+I'm seeing over here okay if location is
+
+exist so please do let me know the
+
+location I'm simply printing it and then
+
+I'm going to be call it okay I'm going
+
+to be call what I'm going to be call
+
+tell me I'm going to be call this get
+
+weather method so here to this get
+
+weather method I'm passing this location
+
+okay now based in this location based on
+
+this particular location what I am
+
+getting I'm getting uh my response okay
+
+once I will hit this particular URL and
+
+from this particular response I can
+
+collect the latitude and longitude based
+
+on my location only so I'm printing my
+
+latitude and longitude also and then
+
+this is my final URL uh with the
+
+latitude and longitude and based on this
+
+latitude and longitude we are going to
+
+fetch the tell me guys what we are going
+
+to fetch we are going to fetch the final
+
+response and here we are printing uh
+
+this particular response getting my
+
+point yes or no guys tell me I hope this
+
+is clear now uh here in front in place
+
+of this particular URL whatever is there
+
+so previously I was testing with the API
+
+it was working fine so I have I had
+
+generated this URL now let me remove
+
+this URL and let me put mine whatever I
+
+have created so first of all let me keep
+
+this API key so here is my API key I'm
+
+going to be copy it and I'm going to be
+
+keep it over here that's it now the next
+
+thing is what so over here after keeping
+
+the API key guys what is required tell
+
+me so here the location is required uh
+
+so this side also I can mention the API
+
+key perfect guys let me keep it inside
+
+the double code great now uh here city
+
+name so city name actually I can replace
+
+with the location so let me keep the
+
+location over here this one and here
+
+perfect now what I will do I'm going to
+
+be concatenate this particular string
+
+this one and this one guys so let me
+
+keep it like this great and here this I
+
+can keep inside the double code okay
+
+perfect and here I can keep this
+
+particular value inside the double code
+
+so that is going to create my entire URL
+
+okay so I can remove this uh this one
+
+because it is not at all required fine
+
+so this is my complete URL which I got
+
+now simply I can copy and paste it over
+
+there because I want it with this
+
+particular API key so here is my URL let
+
+me remove it first of all and perfect
+
+guys this is my latest URL now same
+
+thing I have to do with this one also so
+
+first of all let me remove this uh last
+
+one because I already pasted and here I
+
+require this latitude and longitude so
+
+let me keep this latitude and longitude
+
+because I want in a Str strr form so
+
+here is
+
+my latitude okay great now what I will
+
+do I'll be keeping it over here and then
+
+inside the double code that's it so this
+
+thing I'm keeping inside a double code
+
+and now plus and then s Str longitude
+
+okay I have to create a URL in this
+
+particular form only so that's why I'm
+
+doing this each and everything now uh
+
+this is my SDR longitude now I'm going
+
+to be click on this plus and perfect
+
+guys so I got my this URL as well fine
+
+so I'm going to be keep it inside the
+
+double code yes perfect so here is what
+
+here is the uh longitude and now let me
+
+keep the latitude also guys just a
+
+second uh so here is what here is my let
+
+SD uh weather is here weather and then s
+
+Str perfect guys so this is going to be
+
+my latitude okay so just a second I
+
+think I did it wrong now let me keep it
+
+over here that's it guys perfect so uh
+
+now let me cross check this particular
+
+URL whether it is a correct or not and
+
+here for this one I can simply check
+
+with my WEA open AI so weather open Ai
+
+and this is the one just give me a
+
+second and I'm finally going to call it
+
+so here is the lead guys so this is the
+
+thing basically which I was missing
+
+after the weather and please check out
+
+with the original one if H something is
+
+missing or something is there perfect
+
+guys so this is my complete URL now I'm
+
+going to be copy and paste where tell me
+
+over there itself so here is my URL so
+
+let me remove it
+
+and this is going to my
+
+request perfect and yes so see guys I
+
+have pasted my URL with the API key and
+
+all everything so let me remove it and
+
+then everything is fine everything is
+
+perfect so uh let me revise the code
+
+once and then I'm going to be execute it
+
+and we'll get the weather from the
+
+different different cities and all so uh
+
+first what I did I defined this main
+
+function this is my endpoint key key
+
+endpoint and this API key this is my
+
+client okay and and by using this client
+
+I'm going to be create this chat
+
+completion API there this is my model
+
+and here is what here is my message then
+
+I have defined the function for what for
+
+fetching the information from The Prompt
+
+itself so this is my function and here
+
+I'm fetching the location and based on
+
+this location okay I'm going to be fetch
+
+the uh like necessary information okay
+
+so here I'm going to be F the location
+
+from where from this particular response
+
+and then uh based on this this
+
+particular location I'm going to be
+
+called the open weather map API and here
+
+is my final weather so let's see whether
+
+it is working or not so first of all I'm
+
+going to be clear my screen just a
+
+second CLS and then let me call this
+
+python function calling.
+
+py great guys so let's wait and
+
+check fine it is telling to me uh Json
+
+decode Json coder expert value line
+
+number one okay at which line I'm
+
+getting error guys let me check over
+
+here line number 65
+
+line number 65 okay and then line number
+
+42 maybe I missed something over here uh
+
+line number
+
+42 Json
+
+loads and here is what function
+
+argument great guys this is perfect Now
+
+function argument is the location
+
+itself okay wait guys let me check what
+
+is the issue so here guys you can see we
+
+are getting our output so what was the
+
+issue so ISS issue basically it was was
+
+with the model so here there what I did
+
+uh I just changed my model means I
+
+redeployed that particular model and now
+
+I'm getting the output because uh see
+
+I'm passing the input uh prompt to the
+
+model and it was not able to generate
+
+the final output this uh sorry not final
+
+one this initial uh like output this
+
+initial response and because of that it
+
+was not able to decode this uh Json
+
+basically that's why it was generating
+
+the issue so what I did I did nothing I
+
+just like uh redeploy the model maybe it
+
+was not able to connect and now I'm able
+
+to get my answer so let me show you how
+
+it is going to work I will give you the
+
+entire code and in a similar way you can
+
+test if you are getting the same error
+
+which I am getting in that case you can
+
+restart your model or you can delete the
+
+previous uh deployment and then you can
+
+redeploy it and then finally uh it will
+
+give you the answer so uh let me check
+
+with the other location over here so
+
+here uh I tested with the Bal uh here
+
+let me write the Delhi so after writing
+
+a Delhi I can uh write over here this
+
+python function calling now see uh once
+
+I learn it guys here you can see the
+
+city name is Del latitude is this one
+
+longitude is this one and here is the
+
+weather condition so the weather
+
+condition is has now uh see if you want
+
+to uh if you want to know more
+
+information about the weather you can
+
+get it so here it will give you the
+
+complete and a detailed information
+
+about the weather I'm just going to be
+
+check the like type of the the weather
+
+the weather condition which I'm going to
+
+be uh collected from here and finally
+
+I'm printing it that's it but if you
+
+want to get a like a temperature cloudy
+
+this that whatever right so here you'll
+
+be able to find out inside this
+
+particular variable now uh what I can do
+
+I can show you so I can I'm going to be
+
+print this final response so that you
+
+will be getting what all information
+
+actually I can get with respect to the
+
+weather so uh here uh again let me run
+
+it python function calling. py and uh
+
+now see it is Delhi ltitude longitude
+
+great and see guys here weather
+
+condition is has but apart from this one
+
+it is giving me each and every
+
+information so here's is the description
+
+now humidity pressure temperature
+
+temperature minimum feace like okay
+
+every information so uh see guys over
+
+here uh you will be finding out finding
+
+it out for the console itself I hope
+
+this thing is clear now uh what we can
+
+do so we can understand the next module
+
+now in the next module guys let me go
+
+back to the uh let me uh go back to the
+
+PPT so we are done with the function
+
+calling in the next module I'll be
+
+showing you this fine tuning so the fine
+
+tuning first we'll select the model then
+
+we'll prepare the data and then uh we'll
+
+do the cost analysis so uh here guys I
+
+will be doing the cost analysis and on
+
+top of it I'll be performing the fine
+
+tuning because the cost of the fine
+
+tuning is very very high and it takes
+
+lots of time as well so here definitely
+
+I'll be guiding you related to this one
+
+and finally we'll be starting with the
+
+Azure open a sorry AZ your AI studio so
+
+let's start with the fine tuning so
+
+before starting with the fine tuning
+
+let's try to understand the fundamental
+
+concept of the fine tuning so here guys
+
+uh let me show you my Blackboard and
+
+over my Blackboard what I kept I kept
+
+the different different model and
+
+related to those model you find out the
+
+parameter so uh let's look into the
+
+parameter so this GPD 4 uh it is having
+
+around
+
+1.70 1.76 trillion parameter now this
+
+GPD 3.5 is having 175 billion parameter
+
+GPD 3 it's having again 175 billion
+
+parameter now here you can see some
+
+other model as well so this Bard is
+
+having a 345 million parameter this a
+
+t511 billion parameter okay uh let's
+
+look into the Jimmy model So jimy Pro
+
+it's having around 175 billion parameter
+
+now this llama right so we have a
+
+different different variants of the
+
+Llama like uh 2B sorry 7B 13B 17b so it
+
+is representing to the parameter only
+
+now first of all we need to understand
+
+the meaning of this parameter so let me
+
+write over here this a parameter is
+
+nothing guys this parameter is uh called
+
+bits and biases okay so bits and biases
+
+itself is called called what it's called
+
+the parameter now whenever we are
+
+talking about the model guys so here let
+
+me write the model or let me write any
+
+sort of a model let's say here I'm
+
+writing this GPT or maybe jimy so this
+
+model actually they are using
+
+Transformer as a base model I think you
+
+know about the Transformer right this
+
+attention all you need research paper uh
+
+you can check out with that research
+
+paper you will get architecture of the
+
+Transformer there you will find out the
+
+uh inside the Transformer architecture
+
+you'll find out the neural network there
+
+are various stages of the Transformer so
+
+first is uh embedding okay encoding Ming
+
+then uh there is a multi detention and
+
+then from the multi attention it is
+
+going through the neural network itself
+
+and then uh the normalization layer and
+
+all everything so uh inside the
+
+Transformer actually you will find out
+
+the neural network and this neural
+
+network actually uh it's a collection of
+
+what weights and biases so this weights
+
+and biases is nothing it's a trainable
+
+parameter this is what this is trainable
+
+parameter now just think over here if we
+
+are saying three uh so if we are saying
+
+like 175 billion parameter so what would
+
+be the size of the architecture okay now
+
+if we going to if we going to train
+
+these type of architecture so how much
+
+time it will take it's a like a very uh
+
+typical question okay so like no one can
+
+answer uh other than that person who has
+
+trained the actual model so here we are
+
+talking about the llm model which is a
+
+very very huge which I just shown you so
+
+it is having a lots of parameter like
+
+bits and bies it is called the trainable
+
+parameter and this bits and bies is
+
+nothing it's a part of the neural
+
+network only whenever we design the
+
+neural network there actually we connect
+
+this input layer to hi layer with a bait
+
+and vises and Hider layer to Hidden
+
+layer with a bait and biases okay so I
+
+hope this thing is clear to all of you
+
+now see guys let say we have train our
+
+model on top of one specific data uh
+
+what I did uh let's say this is what
+
+this is my GPD model and this particular
+
+GPD model I train on various data so
+
+here this is the entertainment data now
+
+this is the sport data okay now this is
+
+the politic data now this is the
+
+historical data of various data from
+
+where from the internet and now it is
+
+capable to answer related to this
+
+particular data related to each and
+
+everything now tomorrow guys let's say
+
+there are one more data which came so
+
+here uh one more data is related to what
+
+uh related
+
+to
+
+Indian
+
+election 24 okay so here guys see let's
+
+say tomorrow uh we came with a we came
+
+up with a new data and I want to ask
+
+something okay I want to ask something
+
+as of now see my model is just is just
+
+train on this e-commerce data or uh
+
+basically this uh uh basically this
+
+particular data right Sports and this uh
+
+politics and history and all but it
+
+don't know anything about this Indian
+
+election 24 so uh let's say if I'm going
+
+to ask any sort of a question that who
+
+will Who will win the election in 24
+
+right so who
+
+will win the election in
+
+India in in 24 so this is my simple
+
+question to my model now will it be able
+
+to answer this question tell me will it
+
+be able to answer this particular
+
+question no it cannot answer to this
+
+question why because it don't know
+
+anything about this particular data we
+
+haven't trained it we haven't trained my
+
+model on top of this data okay so my
+
+weights and biases actually it don't
+
+know anything about this particular
+
+information so what I can do so in this
+
+case I can perform the fine
+
+tuning fine tuning actually what it does
+
+see so here we will be passing this
+
+particular data so again this weights
+
+and biases means in short I can say
+
+parameter so my parameter actually it's
+
+going to be adjust okay my parameter
+
+this parameter is going to be adjust and
+
+now if I will ask this particular
+
+question to my model definitely I will
+
+be getting the answer why because now I
+
+have retrained my model on top of this
+
+data I have adjusted my parameter this
+
+bits and biases and now I can ask the
+
+question related to this particular
+
+information getting my point and this
+
+retraining okay additional training
+
+additional training it is called fine
+
+tuning I hope this thing is getting
+
+clear to all of you now let's do the F
+
+tuning of the GPD model using this aure
+
+open AI first of all what you have to do
+
+guys you have to open your Azure open AI
+
+uh a studio now inside this one just go
+
+and check with the model so here you
+
+will find out the various model and this
+
+is all the pre-trained model which
+
+someone has St and we are using just
+
+click on this create a custom model okay
+
+now here you find out it is telling to
+
+you this fine tuning is not available in
+
+this particular reason and I think I
+
+shown you initially that uh you can
+
+check the reason in which reason fine
+
+tuning and all which is available so
+
+what you can do so here uh simply you
+
+can uh go and check with the
+
+documentation let me show you again uh
+
+so this fine tuning is not available
+
+inside this East us uh but I have
+
+created one more a your openi service
+
+with the c uh with a South Central us
+
+okay I will show you that just a second
+
+so let it load or what I can do uh here
+
+actually I can just wait so let me close
+
+it first of all and I'm going to be open
+
+one more as your open Ai and with that
+
+basically I can show
+
+you oh just a second I think my Internet
+
+is
+
+slow great guys so here I have opened my
+
+Azure up here I I opened my Azure portal
+
+now let me open this Azure open Ai and
+
+here I already created two service so
+
+this is my first service which is inside
+
+this East us and the second was inside
+
+the nor North Central us sorry I was
+
+telling the South Central but it is
+
+inside the north central us once I will
+
+open it so here you will find out uh
+
+there is a model deployment now just
+
+click on this manage deployment and then
+
+uh okay until I think it is loaded now
+
+okay fine so I got it so see inside this
+
+particular section SE this fine tuning
+
+is not available we uh inside this fine
+
+tuning model and what is my reason my
+
+reason is the East us so what you can do
+
+just click on this drop down and then
+
+select this South Central USC still we
+
+are not able to get the fine tune model
+
+whatever model basically which I can
+
+find T so just again click on this drop
+
+down and select on this uh select this
+
+nor Central us now see guys we are able
+
+to get this model okay which I can find
+
+you so web with the
+
+$34 okay D in with the $40 uh GPD 3.5
+
+turbo $45 GPD 3.5 turbo $68 got it now
+
+uh what I can do so first of all let me
+
+show you how you can f tune how you can
+
+start your F tuning process and then uh
+
+we'll perform we like calculate the cost
+
+and all what might be the cost okay the
+
+minimum cost so first of all see we are
+
+inside this particular location north
+
+central us now just click on this model
+
+and then create on this custom model now
+
+here there is a various uh stages okay
+
+various stages which you need to fill
+
+out so first you need to select the base
+
+model so here you have a b DaVinci and
+
+the different different variant of the
+
+GPT and this GPT 4 now what I'm doing
+
+I'm selecting GPT 3.5 turbo and here you
+
+can decide your model suffix if you want
+
+to add something it is optional only so
+
+let's say here I'm writing uh my fine
+
+tune latest right so this is what this
+
+is my suffix means at the end of the
+
+model I will be getting it now just
+
+click on this next so here it is asking
+
+about the data so I already kept the
+
+data guys let me do one thing let me
+
+remove this data I'll be showing you
+
+from scratch okay so I'm going to be
+
+close it here is what here is my data
+
+file and then let me delete this data
+
+file fine great so again I'm going to
+
+the
+
+deployment and then custom model here
+
+actually I deleted it why I will show
+
+you uh basically why I uh stopped it I
+
+will letting you know oh let me delete
+
+it from here as well so perfect this was
+
+my previous job which I was creating
+
+okay now custom model and here is what
+
+base model this is my
+
+suffix my find un latest great now what
+
+I can do so here I can click on this
+
+next now it is asking me about the data
+
+so how you going to provide the data
+
+there's a three option choose from the
+
+existing file which was there but I
+
+deleted it now upload the file from
+
+local and here is what as your blob or
+
+other shared web location so from
+
+anywhere you can keep the file now what
+
+I'm doing so just click on this browse
+
+of file okay I'm uploading it from the
+
+local itself and this is my file now see
+
+here the here the extension of this file
+
+should be Json okay do Json L getting my
+
+point so uh let me uh do one thing let
+
+me check with the Google itself in front
+
+of you so here I'm searching about this
+
+Json L okay Json l file so this is the
+
+specific file okay Json lines actually
+
+it's the extension of the Json only
+
+which this uh GPD model is using okay it
+
+want the data in this specific format
+
+only in this Json lines now let me show
+
+you where I kept the data so I kept the
+
+data inside my local system inside my
+
+local system only I created one folder
+
+find model uh and inside this one I have
+
+my data so let me reveal it inside the
+
+file explorer itself so this is my data
+
+guys inside this fine tune folder test
+
+do jonl okay Json L Json line now I'm
+
+going to be open it inside the notepad
+
+and see guys so if you will look into
+
+the data so guys this is very mandatory
+
+and necessary thing please be careful
+
+here you have to keep your data in this
+
+specific format only okay this is here I
+
+have kept 10 lines because one more
+
+thing if you're providing uh less than
+
+10 line okay here is a 10 10 line
+
+basically inside my data if you're
+
+providing less than 10 line in that case
+
+it won't accept it means the GPD model
+
+it won't accept it it will reject it so
+
+inside your data there should be minimum
+
+10 lines okay let let me show you one
+
+line uh so what I kept over here so what
+
+I'm going to do I'm going to select this
+
+line completely and here after selecting
+
+it I'm going to be open my Json viewer
+
+let me open my Json viewer and there I
+
+am searching or sorry there I'm pasting
+
+this particular line so here is my line
+
+right now format so see guys so this is
+
+the data okay in this specific format I
+
+have to pass the data first is what
+
+first is the role so here I'm defining
+
+the role of the model so I'm saying you
+
+are a customer support agent for the
+
+smartphone company who who whose primary
+
+goal is to help user with the issues
+
+they are experiencing with their
+
+smartphone you are friendly and concise
+
+you only provide factual answer to the
+
+query and do not provide answer that are
+
+not related to the smartphone right
+
+because I want to train my GPD model on
+
+a specific data okay on a smartphone
+
+data which maybe don't know so let's say
+
+if I'm going to ask anything to my GPD
+
+model into the smartphone and if it is
+
+not able to answer I can train it
+
+specifically I can train on train it on
+
+that particular data and that is what
+
+I'm providing over here so the first
+
+thing you have to provide the data in
+
+this specific format and the second
+
+thing is what
+
+at least 10 line inside your data the
+
+third one is what the extension should
+
+be Json L Json line got it so perfect
+
+and here is what here is my user user
+
+question and this is the answer so uh
+
+yeah now what I can do I can uh upload
+
+the file which I already selected now
+
+after uploading the file see it is
+
+getting uploaded I can simply select
+
+it it is in progress
+
+guys great I got my file now just select
+
+it okay done then just click on this
+
+next and it is asking about the
+
+validation just select this file great
+
+validation is done Okay now click on
+
+this next and here these are the like
+
+some option which is which it is giving
+
+to you how many number of epo you want
+
+to run in number of epo EPO means what
+
+forward propagation plus back
+
+propagation that is called one EPO so uh
+
+if you will go and check with the custom
+
+one you will find out you can increase
+
+the number of AO by default actually is
+
+two only now B size if you have lots of
+
+data if you like would like to uh
+
+provide the data in the batches as of
+
+now there is only one batch means we are
+
+providing the entire data but if you
+
+want to increase the B size you can do
+
+it that is also possible now our
+
+learning rate like multiplier so yes
+
+that is also like you can you can like
+
+put and here you can uh Define the seed
+
+value also okay so these are the thing
+
+basically which I'm keeping by default
+
+only and here I I'm going to be click on
+
+this next and see this is the like final
+
+information and then you can start your
+
+training job now once you will click on
+
+this training job so here see guys it it
+
+has started with a fine tuning so this
+
+is what this is my fine tuning progress
+
+now let it complete and uh I won't
+
+complete it guys because it's going to
+
+be charge you a lot and I don't want it
+
+and guys uh believe me not even charge
+
+it will take the time as well so if I
+
+want to get this particular model so the
+
+charge this uh trading time it will take
+
+around 30 to 35 minute and after 35
+
+minute I'll will be getting the model
+
+after 15 minutes so this is a 1 hour
+
+effort okay 1 hour process with a 10
+
+line only just just think guys how big
+
+the model is and how much time it will
+
+take with a like just a small it's just
+
+like with a 10 line only if you are
+
+passing like 100 line or 150 line so it
+
+might take uh maybe 2 Hour 3 Hour 4 Hour
+
+it depends on the data only so here
+
+first of all let me calc the cost and
+
+then uh I think this is done uh so yeah
+
+then I will be stopping the stopping
+
+this particular process and see after uh
+
+like training this particular model so
+
+you'll be getting it over here itself
+
+okay inside your model then definitely
+
+you can uh deploy it and then you can
+
+use inside your chat engine or else you
+
+can consume it inside the local in a
+
+similar way we are going to be we are
+
+consuming the other model getting my
+
+point so on let me repeat it once you
+
+will uh like train this particular model
+
+okay so you will be getting over here
+
+along with all the model you can deploy
+
+it over here inside this section and
+
+then you can utilize it directly inside
+
+your playground or else you can access
+
+it inside your local system as well
+
+using the get completion API fine now uh
+
+let's discuss about the price and all so
+
+let's say I have decided this particular
+
+model so the price is what training per
+
+compute R is what 45 tell me guys
+
+$45 so here I am going to be open My
+
+Epic pen uh let's try to calculate some
+
+sort of a price so here guys let's
+
+say um
+
+great perfect so uh let's say guys here
+
+the price for the per computer R is what
+
+$45 okay so if we going to talk about
+
+here or instead of this one I can open
+
+my calculator just a second because I
+
+think it is giv some
+
+problem $45 for the per computer let's
+
+say if I'm going to be uh if my process
+
+going to be for the half an hour so you
+
+can uh divide it by two itself so there
+
+will be around 23 okay now apart from
+
+this one here hosting per hour let's say
+
+I'm going to be hosted for the uh this
+
+particular model for uh let's say 2 hour
+
+okay so here uh what is this tell me $3
+
+so here I'm going to be add more $6 now
+
+apart from this one see input uses per
+
+th000 token so this is fine this is are
+
+very less charges I can add $1 more so
+
+here around $30 so if I want to use this
+
+model if I just want to test it in that
+
+case I will have to pay at least $30
+
+guys okay where I'm and where I'm
+
+calculating the training time just for
+
+half an hour let's say if I'm having a
+
+huge amount of data in that case uh it
+
+will take around
+
+like 2 to 3 hour or maybe more than that
+
+so the charge is going to be very very
+
+huge and guys you won't believe me I got
+
+$120 will within half an hour only so
+
+that's why I'll be sto sorry $120 will
+
+within one and a half hour okay so
+
+that's why I will be stopping the
+
+process and yes uh rest of the thing is
+
+fine now if you want to calculate into
+
+the Indian rupees so simply uh what you
+
+can do 30 into let's say I can take 883
+
+only so $1 is equal to 83 RUP now here
+
+is the prices around
+
+2.5k right rupia so that will be a price
+
+for what for the fine tuning just for 1
+
+hour that's why I was saying it is
+
+costly and I think you got to know the
+
+process of the fine tuning so let me
+
+stop it because it is going to be run uh
+
+now here see here you can see inside the
+
+notification and all it is creating the
+
+fine tune model now uh here I can delete
+
+it so so perfect it is not at all
+
+required so yes I hope you got to know
+
+about the fine uni now let's try to
+
+understand the next thing uh let me open
+
+the PPD itself so now we'll be talking
+
+about this a your AI Studio
+
+guys now in this Azure AI Studio guys
+
+first we'll start with the Azure AI Hub
+
+I will create the Azure AI Hub and the
+
+other resources then uh I will deploy
+
+the model or I will see that how I will
+
+show you that how we can use the model
+
+from the AZ openi directly from the AI
+
+also you can connect okay inside this
+
+azui studio we'll create our own rag uh
+
+mean means our custom rag and uh then uh
+
+here we going to steam like the entire
+
+pipeline using this promp flow it is a
+
+very amazing Service uh which is being
+
+provided by the aori studio then we'll
+
+create an endpoint URL okay means I will
+
+deploy the application finally and we we
+
+will be consuming it inside our local
+
+application so here we're going to
+
+create one flask application and there I
+
+will show you how you can consume this
+
+endpoint URL okay now before it starting
+
+with this Azor EI Studio you should be
+
+aware about this azori studio guys so uh
+
+what you can do you can check out with
+
+the uh Microsoft itself with the
+
+official page of the Microsoft now just
+
+see uh what they are saying about this
+
+Azure AI studio so Azure AI Studio it's
+
+a unified platform for developing and
+
+deploying generative AI application so
+
+if you you want to create generative
+
+related application if you want to
+
+deploy it okay so this a plateform will
+
+help you from starting to end it's a
+
+unified it's a single platform for
+
+everything and it's pretty amazing guys
+
+definitely you will get to know once
+
+I'll be showing the entire functionality
+
+of this a AI studio now you can check
+
+the overview so inside the overview they
+
+have mentioned explore the model craft
+
+it then design it then roliz is okay so
+
+you can uh like like like get a
+
+evaluation and all evalution metrics and
+
+all at the single place after deployment
+
+and all then uh here you can see the
+
+benefit so what is the benefit it is
+
+going to be improve the customer
+
+experience it is reducing the
+
+organization risk okay improve work
+
+quality and then enhance productivity
+
+and all capabilities so yes uh these are
+
+the capability you can build your own
+
+co-pilot Enterprise check okay that we
+
+are going to be create here incorporate
+
+multimodality means you can uh like keep
+
+all the models the different different
+
+type of model and one very amazing thing
+
+I will show you and you will literally
+
+Sol so uh okay just wait I will be
+
+showing you that now analyzis spe yes
+
+you can analyzis the speech also so yes
+
+you can go through with it and pricing
+
+and all everything they have mention and
+
+yes definitely you will be able to get
+
+each and everything now coming to this
+
+AO AI studio so for that what I will
+
+what I have to do first I have to open
+
+the Azure portal so I'm going to be open
+
+the Azure portal inside the new new uh
+
+like uh inside a new
+
+browser new window guys so this is what
+
+this is my a portal now let me click it
+
+and here guys just a second let me do
+
+the sign in and this is what this is my
+
+a portal okay great now here what I will
+
+do I will simply search this a your AI
+
+Studio okay so let me search over here a
+
+your
+
+AI Studio got it now after searching
+
+this azui studio I'll be getting this
+
+particular page so I already created
+
+this my chatbot my project this uh to
+
+basically but here in front of you I'm
+
+going to create it from scratch okay so
+
+if you want to create this azer UI
+
+studio so for that first you have to
+
+create this Hub new a your Hub and
+
+inside that you're going to launch this
+
+studio okay so just click on top of this
+
+new a your AI Hub and after this one it
+
+will ask you some sort of information so
+
+first is what first is a subscription
+
+the second is a Resource Group we're
+
+going to use the same Resource Group
+
+which we have created then reason is
+
+what uh East us only okay name you can
+
+write any name let's say here I'm going
+
+to be write
+
+crash course and uh here uh see friendly
+
+name is the same you can change it also
+
+then default project resource grou okay
+
+so this is what default project resource
+
+grou now uh after this one it is asking
+
+about the aure AI service for the base
+
+model so uh See by default actually it
+
+is creating a new service new service
+
+for what tell me for the base model for
+
+the openi model but already we have
+
+created that service right I told you
+
+now that we can connect with the
+
+previous service also so we can connect
+
+it over here now just click on this drop
+
+down and select this crash course module
+
+see there is two one is my audio
+
+transcript and this crash course module
+
+I'm going to select this crash course
+
+module now let me select it and then
+
+review and create and see guys it is
+
+getting reviewed and then I'll be
+
+creating it now I'll just wait and the
+
+surprise is for all of you and here the
+
+surprise is going to be uh let me show
+
+you that so once I will create it so
+
+after creating it see the deployment is
+
+getting initialized and uh after this
+
+one after the deployment and all I will
+
+be able to access my a your AI Studio
+
+okay so let's wait uh let's wait for a
+
+minute I think it will take around 30 to
+
+40 second or maybe one or 2
+
+minute so yeah it is uh getting prepared
+
+now
+
+so see guys still is creating and once
+
+it will be done I'll be getting the
+
+resource option see by default actually
+
+it is creating these particular
+
+resources okay by default I'm not doing
+
+it automatically so one is the key w we
+
+are actually is going to be save all the
+
+keys and all the second is what second
+
+is a storage account okay so
+
+automatically it's going to create a
+
+storage account that blow blob storage
+
+account which I shown you right
+
+previously so yes I can utilize this
+
+particular account and I can keep my
+
+data over here so with every Azure AI
+
+Hub okay with every Azure AI studio uh
+
+this resources will be connected one is
+
+what one is this uh like Vault second is
+
+a storage third is this Azure open Ai
+
+and the fourth one is the Azure AI
+
+search that I will show you whenever I'm
+
+going to be create an index and all uh
+
+at that time it will come now see it is
+
+ready so simply you can create on this
+
+go to the course sorry go to the
+
+resources and there is so many thing
+
+right in the left hand side a project
+
+netw workking property lock alert metrix
+
+and all but here this uh project is uh
+
+required okay now uh see guys what you
+
+can do so first of all you can see this
+
+particular icon launch AI uh launch AI
+
+studio so uh once you will click on top
+
+of this launch AI Studio you will be
+
+able to launch this AI studio right so
+
+let it launch and after this one uh see
+
+guys here you can see all the options
+
+similar to the Azure eii studio uh AZ
+
+your open Studio but it is not this a
+
+your openi studio it is a your eii
+
+studio let me show you if you are
+
+getting confused so this is what a your
+
+Open studio just for the openi model and
+
+all and this is a your EI studio for the
+
+end to end thei application so what I'm
+
+doing so first of all uh what I will
+
+have to do over here I will have to
+
+create a new project inside this one so
+
+once you will scroll down you will be
+
+getting a different different option
+
+permission description project connected
+
+sources and all everything so what you
+
+have to do first guys click on this new
+
+project and I'm going to be create my
+
+own project let me write the name also
+
+the name is going to be a trash course
+
+okay same name I'm writing uh for
+
+everything so that I won't be confused
+
+and I can easily identify so this is
+
+what is my project now project is
+
+getting created guys it will take some
+
+time again uh like uh one or two minute
+
+so let it
+
+create and after the project guys I'll
+
+be showing you that from uh where
+
+actually you can find out all the
+
+resources and all so inside the project
+
+all the resources will be there if it is
+
+not there then simply we can connect it
+
+also okay so guys here you can see my
+
+project is done I created a project now
+
+after creating the project you will find
+
+out these many option left hand side
+
+right so now uh just see uh let's uh
+
+look into the options what all option is
+
+there first uh let's look into this
+
+component so you will find out the data
+
+so whatever data basically you want to
+
+keep you can keep the data similar to
+
+the Azure uh openi Studio then you have
+
+a indexes indexes with respect to the
+
+vector database okay then here is a
+
+deployment so whatever model right
+
+whatever model basically you have
+
+deployed you will be able to find out
+
+each and every model over here now
+
+content filtering so if you want to
+
+filter any sort of a Content you can
+
+create over here and you can filter that
+
+right uh means uh you can connect it
+
+with your model and application and you
+
+will filtering that specific content now
+
+here you can see the fine tuning yes
+
+over here also you can do the fine
+
+tuning and all now evaluation metrics
+
+evaluation is also there you can perform
+
+the evaluation you can create the
+
+evaluation so ground Ruth relevance
+
+coherence fluency everything basically
+
+whatever metrix is required for
+
+evaluating a model now tracing right so
+
+here you can trace yourm application now
+
+one more thing prom flow so prom flow
+
+guys it is very much important and with
+
+this also with this only we are going to
+
+be create the Anto application now code
+
+is there if you look into the code so
+
+yes uh like you can create this code
+
+okay you can select your CPU or GPU you
+
+can select the virtual machine and over
+
+there you can run your own code right so
+
+these many functionality they are
+
+providing to you now chat wise so chat
+
+completion API completion API assistant
+
+is also there image related like Delhi
+
+and all everything is there and other
+
+than this one model catalog model
+
+Benchmark prompt catalog and all so this
+
+thing is not required just for the
+
+information and all you can check out so
+
+first of all what we have to do see guys
+
+you have to go inside the setting and
+
+you have to connect with all the
+
+services and all so guys once you will
+
+go inside the setting here actually you
+
+will be getting the option okay option
+
+for the new connection so see these are
+
+the services which is there okay
+
+connected resources crash course model
+
+this means my Azure open here is what
+
+here is my artifact storage okay means
+
+my blob storage and the other one like
+
+the Vault and all uh and I will show you
+
+one more a your AI search Once I will be
+
+creating my rank with my custom data so
+
+just click on this new connection guys
+
+and here uh see there are like a
+
+different different option you will find
+
+out uh now you just need to click on
+
+this aure openi service so here already
+
+we have a service two Services first is
+
+what crash course and this my audio
+
+transcript so you are able to see the
+
+service but it has not connected it okay
+
+it has not connected so if it if if it
+
+didn't connect it you can connect it
+
+manually okay so after click on the
+
+connect option you can
+
+like connect it manually you can add the
+
+connection now I want to add this
+
+particular one so just click on this add
+
+connection and after adding the
+
+connection guys you will be able to find
+
+out see it is connected now just close
+
+it and go inside the deployment so once
+
+you will go and check inside the
+
+deployment so now you'll be able to find
+
+out the same model which I'm having
+
+inside where inside the a your open AI
+
+okay inside this specific service so no
+
+need to do it from scratch u means uh
+
+all the model deployment and all
+
+directly you can f the model over here
+
+those particular model over here now one
+
+more thing guys here see if you will go
+
+and check with this create deployment so
+
+here actually you will be able to find
+
+out two option real time deployment and
+
+pay as you go okay so you can select any
+
+one from here so let's say if I'm going
+
+to select this real time deployment now
+
+here inside the real time deployment see
+
+uh if I will scroll down so along with
+
+this GPT And all I'll be getting the
+
+other model as well like fee llama is
+
+here okay
+
+and apart from this one m is here and
+
+this uh Nemo is there from the Nvidia
+
+okay Desi is here and many different
+
+different hugging face model and that is
+
+what I was saying to you so inside this
+
+azur studio it's not like that you are
+
+just going to be use the opening model
+
+no you can get the other model as well
+
+and that's the beauty of the AZ AI
+
+Studio I hope now you are getting my
+
+point so let's do one thing guys let's
+
+try to use this model so here I'm not
+
+going to be uh like use any other model
+
+other than this uh open a and all
+
+because uh yes this open a model is a
+
+sufficient for me as of now for creating
+
+the application but if you want to use
+
+uh you can use it I shown you the way
+
+how to do it so uh let's do one thing
+
+let's try to uh open this chat engine
+
+okay this is my model and after opening
+
+this chat engine what I can do so see
+
+with respect to this one I'll be getting
+
+my key and here is what here is my
+
+target URL and all everything so just
+
+click on this open playground I will be
+
+open it I will be open I will be able to
+
+open this particular model inside the
+
+playground okay inside my chat
+
+playground so let's wait uh yes you can
+
+see the model over here now I can test
+
+whether it is working or not so once you
+
+will simply write here hi so if
+
+everything is fine I'll be getting my
+
+answer so yes uh this is working fine
+
+now if I can uh ask some other question
+
+so how are you so it is giving me answer
+
+that yes I'm fine or whatever so okay
+
+now let's try to ask something else I
+
+hope it is visible to you let me keep it
+
+over here and uh yeah great now let me
+
+ask uh can you tell me the
+
+detail uh can you tell me
+
+about
+
+the T okay which is capital of India
+
+let's see whether this model will be
+
+able to answer or not so here I can
+
+see uh this model is able to give me
+
+answer uh it's a GPD model so definitely
+
+uh it can give me answer okay great now
+
+uh I think it is perfect now one more
+
+thing guys so once you will go inside
+
+this deployment so here see already we
+
+have this particular model now let's say
+
+some if anyone model is not there so
+
+what you can do you can just simply
+
+click on this create uh deployment and
+
+let's say this GPT is not there so just
+
+click on the GPT GP 3.5 turbo and then
+
+confirm it that's it okay you will be
+
+able to get it right now let's say if
+
+you are not getting this confirm option
+
+so first connect with your a your openi
+
+resources okay a your openi resources
+
+and then you will be getting this
+
+confirm option now I hope uh this is
+
+perfect to all of you so let's do one
+
+thing let's try to create our own custom
+
+chatboard so what is the procedure of it
+
+let me show you step by step once you
+
+will go inside the chat guys here see so
+
+uh just look over here that we are only
+
+able to get so I think it has removed
+
+okay fine now I'm going to be ask one
+
+specific question hi can you give me a
+
+price pricee of Nike Air Max shoes Okay
+
+so this is my H question which I'm
+
+asking so let's see what I'll be getting
+
+over here so it is telling to me that as
+
+a AI model I don't know about it okay I
+
+don't having a specific information uh I
+
+hope it is visible to you guys let me
+
+hide to myself see so it is saying it is
+
+not having a specific information with
+
+respect to this particular question so I
+
+want to create my own chatboard okay so
+
+which can like answer for these type of
+
+question so what I did here let me show
+
+you I kept some data okay inside my
+
+system and on top of that data basically
+
+I'm going to be train what I'm going to
+
+be train my model okay so uh just wait
+
+let me open this so here is what guys
+
+here is my data and I hope it is visible
+
+to all of you see so this data actually
+
+it is having an information related to
+
+what Rel to the shoes so I just kept
+
+only three uh like detail okay three
+
+shoes detail because unnecessary it will
+
+take a time if I'm going to be create a
+
+rack system or if I'm going to be create
+
+a like index and all so Nike ear Max
+
+Plus Nike Dunk and Nike slide or sandal
+
+so this is the information like style
+
+code or Price Right date and here you
+
+can see the manufacturing unit and all
+
+location every sort of a detail you can
+
+see over here with respect to this
+
+document now what I'm doing I want to
+
+create a custom chatboard which is uh
+
+like which will be like giving me a
+
+answer with respect to this true and all
+
+so what I can do here so first of all I
+
+have to add this particular data now for
+
+adding the data guys here you can see
+
+this option add your data now just click
+
+over here on this add your data and
+
+click on on top of this add a new data
+
+sources okay now once you will click on
+
+this add to the new data sources now
+
+just select the data sources from here I
+
+want to upload this file from my local
+
+so here I selected this local now I I'm
+
+going to be upload the single file so
+
+here let me take this particular file so
+
+the file name is what Sho so here I got
+
+my file uh the file name is Sho now once
+
+I will get this file I will click on
+
+this next and here see it is asking me
+
+about this a your AI search service so
+
+let's try to see what is this a your AI
+
+search service okay so here if you will
+
+simply check with the Google let me uh
+
+search over here as your AI
+
+search search
+
+okay now uh what is the Azure AI search
+
+so just read about it Azure AI search
+
+okay it is also called a your cognitive
+
+search so guys just listen over here
+
+whenever we are talking about this uh
+
+aure cognitive search it's a very
+
+important part of the rag okay because
+
+it is uh this a your AI search or a your
+
+cognitive search actually it is only
+
+giving the uh permission right for the
+
+similarity search and all okay so based
+
+on the query whatever query will come it
+
+is keeping inside the database and uh it
+
+is keeping the data inside the database
+
+now whatever query is coming it's going
+
+to perform the similarity search keyword
+
+search okay and the name is what so
+
+before the name was the AER cognitive
+
+service and now the name is what Z your
+
+AI search provide secure information
+
+retal at a scale over own contain
+
+inational and generative AI Search
+
+application so uh here in short you can
+
+see it is nothing it's a information
+
+retrieval Source okay it's a information
+
+retrieval system if you want to read
+
+more about it definitely you can check
+
+over here so how it is going to work and
+
+like the full flag uh uses and all okay
+
+with respect to this uh a your AI search
+
+right so what I have to do here I have
+
+to configure my AIO eii search now
+
+already I have so here what I can do I
+
+can connect with that so already I had
+
+created guys so this was the one now
+
+this crash course now I'm just simply
+
+click on clicking on this add connection
+
+and and here I am getting it so if you
+
+remember I've created it when I was
+
+running the azeri studio when I was
+
+keeping the data okay the custom data
+
+and I created one chatbot before this
+
+one as well so uh here my source name is
+
+what crash course now index name I can
+
+keep uh anything over here I can remove
+
+this one so it's going to be my Vector
+
+index my Vector
+
+index now here you can select the
+
+machine also so so let's say uh if you
+
+want to select the machine for the
+
+entire process so this is the like
+
+options now yes you can go through with
+
+this particular option and you can check
+
+now I'm keeping it auto only now just s
+
+on click or just select this Auto and
+
+click on this next now here is what here
+
+is your embedding model which is taking
+
+from this crash course models itself
+
+this is AI service AZ your openi service
+
+now just click on this next and after
+
+this one guys it is checking for the
+
+model it is there or not yes it is there
+
+then finally click on this create okay
+
+so here actually you will be getting
+
+this create see so this is what this is
+
+my create button so I'm creating this
+
+index and based on this particular index
+
+I'm going to be perform the similarity
+
+search over here so uh let's wait uh it
+
+will take some time around one or 2
+
+minute uh for creating this particular
+
+index if your data is very very use in
+
+that case it might take 10 to 15 minute
+
+also so that's why I kept the small
+
+amount of data but still it will take
+
+some time so meanwhile what I can do I
+
+can uh set up my environment and all
+
+everything for creating my final
+
+application now first of all guys here
+
+I'll will be required some folder and
+
+file so I'll will be required one file
+
+that is what
+
+app.py I will be required one more uh
+
+file over here that is HTML which I'm
+
+going to keep inside the templates okay
+
+templates and that is going to my
+
+chatbot UI so now here inside this uh
+
+template I'm going to be create one file
+
+so let me give it to you the code so
+
+here my file name is going to be chatbot
+
+HTML chatbot do HTML okay now uh here
+
+inside this chatbot HTML I can keep the
+
+code and this is but nothing this is my
+
+HTML page okay so a very simple HTML
+
+page I just created it for what for the
+
+uh like for the queries and all it's not
+
+a full flag chatbot and all means a full
+
+flag chatboard page it's a simple uh
+
+like UI okay with respect to this
+
+chatboard and all I will showing you you
+
+will get it now uh inside the app
+
+actually I have to write a code with
+
+respect to what flask and all because
+
+here I'm going to be create my flask
+
+application so uh let me give you that
+
+code also or as I can write it down one
+
+by one so the very first thing which is
+
+required the flask only so simply I can
+
+write the flask and guys here in this
+
+particular uh environment flask is not
+
+available so here I can simply say FL
+
+sorry render uncore template so here is
+
+what
+
+template okay now what I will do so here
+
+I'll be writing the further code so here
+
+is what from flask request this is also
+
+perfect now here uh I'm going to be take
+
+this particular module as well so I have
+
+this URL Li and this Json and this OS
+
+okay so this particular module is
+
+required now what I can do I can create
+
+a my flas application so for that uh
+
+actually I simply need to write Here app
+
+is equal to flask so here flask and
+
+inside the flask this name got it now
+
+here I will be creating my URL so my URL
+
+first URL is going to be uh app. route
+
+and here I can simply write or okay I
+
+can simply pass the SL which is
+
+representing to the Home Route and then
+
+I can pass the method so here is what
+
+here is my method so method list so I
+
+can get I can pass the get and uh post
+
+method so first is post and the second
+
+method which is going to be get only got
+
+it guys I hope this is clear now coming
+
+to the next part so uh what you can do
+
+so here you can create the method which
+
+is associated with this particular route
+
+so here my method name is what
+
+handore form so it is going to be handle
+
+this particular form any anything you
+
+can write any method name I just this
+
+method name came in my mind I'm writing
+
+it that's it so inside this particular
+
+method you will be coding and or what
+
+you will be doing you are going to be
+
+return the particular template okay so
+
+which template guys this chatbot do HTML
+
+so simply you can write over here return
+
+uh this uh return render template okay
+
+render template and here you can mention
+
+this
+
+chatbot do HTML getting my point guyss
+
+or no see I hope this is uh like fine to
+
+all of you now guys what I can do I can
+
+test my application okay so here you can
+
+see it is uh still loading it is
+
+creating the index okay let it complete
+
+now now what I can do I can test it
+
+whether it is working fine or not so uh
+
+what I will do here so simply uh I'm
+
+going to be write this uh python app.py
+
+but before that I will have to install I
+
+will have to install this flask okay
+
+inside where inside this particular
+
+environment so what is the command for
+
+it f install plus simple now uh let me
+
+install it and see it is installing
+
+don't worry I will give you this each
+
+and every command inside my GitHub I
+
+will be keeping this entire code to my
+
+GitHub and the link will be available
+
+inside the descript deson guys so from
+
+there itself you can download it so I
+
+got my flask now what is the next thing
+
+I can uh run here python
+
+app.py so once I've learn it guys here
+
+you can see everything is fine but there
+
+is one thing which I need to add if name
+
+is equal to main so here let me write
+
+this name is equal to main okay so this
+
+is perfect now simply I will write this
+
+app. run and yes perfect so if I'm going
+
+to be run it definitely I'll be able to
+
+like get my URL okay and with that I can
+
+access this sttm this chatbot page so uh
+
+let me clear my screen CLS and I think
+
+it is visible to all of you let me hide
+
+to myself and here I'm going to be show
+
+you this Comm python
+
+app.py now see my application is running
+
+now if I will open it so guys see this
+
+is my chatbot page a very uh simple and
+
+very easy uh very simple page over here
+
+just to test the queries and all nothing
+
+else so if you want to create any full
+
+full flag chatbot and all full flag
+
+chatbot page I can do that also but uh
+
+later on I'll be showing you in my some
+
+other video here just for the testing
+
+around so guys uh let's do one thing
+
+let's close it as of now and then uh
+
+let's stop this particular process and
+
+I'm going back to where I'm going back
+
+to my Azo open AI now see here uh it is
+
+showing to me that it has created okay
+
+this index is created now where actually
+
+sorry the chunking is done and here now
+
+it is creating the index and all so the
+
+first step is done chunking and the
+
+Second Step what like it will be
+
+creating the eming and all okay and then
+
+on top of it like this entire thing
+
+basically it's going to be keep inside
+
+the index and then I can perform the
+
+retrieval operation and all so uh I hope
+
+uh this is done now if you want to check
+
+how the process is going on so just do
+
+one thing so just go inside this uh let
+
+me show you where index is so once you
+
+will click on this index just open this
+
+particular index
+
+okay now inside this index here is a one
+
+option that option is called job detail
+
+once you will click on this job detail
+
+you will find out the entire detail of
+
+this with respect to this particular job
+
+so whatever job you have seen right you
+
+will be finding out the detail step by
+
+step detail with respect to that
+
+particular job now here uh it is telling
+
+to you my uh recent workspace my live
+
+project just a second guys yeah this one
+
+now just uh scroll down and see these
+
+are the particular jobs guys inside this
+
+Vector so what is my Vector name my
+
+Vector index I think my name I written
+
+in this way okay fine not an issue and
+
+yes so this index is also completed and
+
+now registering this particular index so
+
+uh first of all let me uh like tell you
+
+one thing let me talk about the rag
+
+architecture until it is Crea I can give
+
+you like little information related to
+
+this rag architecture and all so in the
+
+rag architecture what we do so let's say
+
+we have a data now what I will do I will
+
+be collecting this data and this
+
+particular data I will be uh like
+
+storing somewhere okay let's say this
+
+data I kept inside the database then uh
+
+from this particular database I'll will
+
+be collecting this data again in the
+
+form of chunks okay chunking I'll
+
+perform the chunking because this data
+
+might be very very huge so let's say
+
+this is what this is my
+
+chunks now with respect to this chunk
+
+I'll be creating the embedding Okay so
+
+so here I can write chunk this is also
+
+my chunk here also my chunk okay now
+
+I'll be creating the embedding so
+
+embedding is nothing it's a numerical
+
+representation of the data so here is
+
+what here is my embeding this is also
+
+repres to the representing same thing
+
+and here also embedding now this
+
+particular embedding guys whatever
+
+embedding we have created I'll be
+
+storing inside where inside the vector
+
+database so here here is what here is my
+
+Vector database or like this Vector
+
+database or you can say Vector index
+
+because this Vector database actually it
+
+will provide you the vector index so the
+
+same process is happening over there
+
+itself so what they are doing you know
+
+so whatever data I have provided the
+
+shoe data they collected it means they
+
+kept inside the database aure blob they
+
+created a chunk from there okay if it is
+
+required they will create otherwise no
+
+because I kept every setting by default
+
+so I'm assuming that they have created a
+
+Chun because the process I can see over
+
+there
+
+then they have performed the iding with
+
+respect to that the model right so
+
+emding model which I loaded so by using
+
+that particular model they have
+
+performed the iding and then they stored
+
+it right where inside the vector
+
+database means by default they are using
+
+the vector database or uh basically with
+
+respect to that they are creating this
+
+Vector index okay Vector database
+
+actually it provide you the vector index
+
+getting my point now what will happen
+
+you know so whenever user is asking any
+
+sort of a query so here let's say is my
+
+query which is being asked by the user
+
+so it will perform the similarity search
+
+based on this particular query so let me
+
+mention the similarity
+
+search and here this uh context I will
+
+be getting the context means I'll be
+
+getting the detail this operation is
+
+called retrieval operation and this a
+
+particular context along with a prompt I
+
+will be adding my prompt and this two
+
+information I'll be passing to what I'll
+
+be passing to my llm I think it is
+
+visible now I'll be passing to my llm
+
+now llm what it will do so it will read
+
+this prom it will read this context and
+
+finally it will be generated it will be
+
+generating the answer with respect to
+
+this particular query so this is the
+
+whole sort of a process now uh just see
+
+over here everything is done with
+
+respect to my uh data now what I will do
+
+if I'm going uh if I'm going now with a
+
+CH chat so there I will be able to find
+
+out my index okay somewhere uh it has uh
+
+this particular index in some database I
+
+don't know about it uh if I'm going to
+
+check the detail definitely I'll be
+
+getting but here you can think that it
+
+has created the vector index now I can
+
+uh select it okay so here is what here's
+
+my Vector index which is already there
+
+now I can select how it is going to be
+
+find out the similar search so here I'm
+
+going to be select both option one is
+
+Vector and the second is what keyword
+
+okay so hybrid option now uh let's say
+
+uh uh let's ask the same question to my
+
+chat bot over here to this uh okay so it
+
+is tell me content cannot be empty
+
+validation error message zero why it is
+
+so guys I think I will have to select
+
+the model so model is also there now let
+
+me ask one more time just a
+
+second okay great now I'm getting so
+
+here uh what I can do I can ask what is
+
+a price what is a price of nice sorry
+
+Nike Air Max shoes
+
+so previously actually it was not giving
+
+me the answer but let's see whether it
+
+is giving me answer or not so now here
+
+the price of this Nike Air Max blush
+
+true is what guys 150 USD if you will go
+
+and check with the PDF you will be
+
+finding out the same price okay now you
+
+can ask any sort of a thing uh to your
+
+uh model with respect to this data and
+
+here see uh it is showing me the
+
+reference also from where actually it is
+
+taking a reference now I want to use
+
+this rag system the rag this one retrial
+
+argument generation in my own in my own
+
+chatbot see here is what here is my
+
+chatbot which I have created so let me
+
+run it python app.py it is running on
+
+top of this particular URL so see guys
+
+here if I'm going to be run it so I will
+
+be getting my chat board this one how I
+
+can integrate this Rec system into this
+
+chatboard now we'll see that particular
+
+process so here guys if I want to do it
+
+so uh I can do it right but how so this
+
+prom flow is The Rescuer okay by using
+
+this prom flow I can do it now uh let me
+
+show you how it is possible so once you
+
+will click on this prom flow uh this
+
+prom flow basically what is the meaning
+
+of the prom flow guys so by using this
+
+prom flow you can schedule the end to
+
+end pipeline okay end to end pipeline
+
+from data injection to this uh like uh
+
+retrieval and then this uh chatbot
+
+generation and all means this data
+
+generation and then deployment also so
+
+what here basically what I did I have
+
+created this pipeline now I'm going to
+
+be deployed by using this prom flow so
+
+I'm going to write my own name the name
+
+is going to be crash course over here
+
+now uh let me open it and here you can
+
+see it will provide me the location as
+
+well just simply click on this open and
+
+see it is going to open this
+
+particular
+
+folder so just a second uh it will take
+
+some time
+
+so now see guys uh it has opened uh this
+
+particular prom flow so uh inside this
+
+prom flow see there are lots many option
+
+okay so which option you need to select
+
+so first of all see let me show you the
+
+files and all so here uh you will be
+
+able to get all the files because see at
+
+the end this is nothing it's a code only
+
+right so whatever I have I have done
+
+over there uh the data uploaders that
+
+data upload and all with respect to that
+
+it has generated all the files and
+
+folder see it is a search it is with
+
+respect to the search this one see now
+
+uh here you'll find out uh this one with
+
+respect to the chunking and all see this
+
+is the require. txt if you want to see
+
+the content also uh you can like you
+
+just need to double click on top of it
+
+and here is what here is a content of
+
+the file all it now what I'm doing see
+
+uh for deploying this particular
+
+application first of all you need to
+
+select this drop down okay start comput
+
+session and then just click on the first
+
+option is start compute session now once
+
+you will click over here guys so here
+
+you will be able to find out it has
+
+started the computation of this
+
+particular session okay now once the
+
+computation will be done I this chat
+
+option will be eligible for me I can
+
+chat to my model OKAY over here now
+
+until what I can do I can give you the
+
+complete walkth through of this prom
+
+flow it is creating so uh see guys here
+
+actually what this prom flow is doing it
+
+is going to be create the entire flow so
+
+from this llm so this is my llm name
+
+okay now here is what here's the output
+
+what output I will be getting okay from
+
+my model then here you can see this is
+
+the script and all the complete uh like
+
+script it has created in a back end then
+
+other than this one here you'll find out
+
+the other thing like prompt and all how
+
+it's going to Define The Prompt okay in
+
+a back end for handling the for handling
+
+each and everything now apart from this
+
+one see extract search means like
+
+keyword search and all whatever we are
+
+going to be per form see with respect to
+
+that there is a code so this each and
+
+every code actually it took from where
+
+tell me from my configuration so
+
+whatever configuration I made over here
+
+inside this chat I directly imported it
+
+inside the prom flow and from there
+
+actually it took this particular
+
+configuration now let's say if we are
+
+not doing like this if you want to
+
+create our own custom flow okay so yes I
+
+can do it once you will click over here
+
+and once you will click the prom flow
+
+and then you can fill the information
+
+over here manually and according to that
+
+it will be generating the
+
+code that's it okay now see my
+
+computation is done now I can chat with
+
+my model okay so whatever model and
+
+whatever data I have provided the rag
+
+which I have created I can chat over
+
+here so once I will click on this chat I
+
+hope it is visible now let me keep to my
+
+uh keep myself over here and see if I'm
+
+going to ask any sort of a thing the
+
+same thing to my chat about over here so
+
+definitely I will be getting it so it is
+
+running just a
+
+second it takes some time if you are
+
+running it first time definitely it will
+
+be taking the time so simply click on
+
+this uh this particular option or if you
+
+will hit enter then also you will be
+
+getting the
+
+answer taking time guys taking time
+
+yes running is still running and here
+
+over the prom flow each and every
+
+service will take some time if you want
+
+to deploy the application it take around
+
+10 to 15 minute okay
+
+fine guys so here you can see we are
+
+able to get an answer so here my answer
+
+is hello how I can assist you now I can
+
+ask something what is a price what is a
+
+price of Nik here Max 2 let's see uh
+
+I'll will be getting my answer on not so
+
+it is taking some time over here guys
+
+but don't worry uh once I will deploy
+
+the endpoint URL it won't take this much
+
+of time and we can configure this
+
+latency on all everything I'll be
+
+showing you how because at the end it
+
+will give you the option to select the
+
+instance
+
+okay so let it are done
+
+okay fine I'm getting my answer and the
+
+price and all everything it is providing
+
+to me so I hope guys uh you are able to
+
+get that how to run this computer
+
+session and how to test it now what is
+
+the next thing I have to deploy I have
+
+to public it okay I have to generate the
+
+endpoint URL so that I can integrate in
+
+my particular chat Bo so for that uh
+
+here let me do one thing let me not this
+
+one this one guys so what I can do guys
+
+here I can click on this deploy okay so
+
+let let me adjust to myself first of all
+
+great uh fine now uh see just click on
+
+this deploy here and after clicking on
+
+this deploy it will ask you the uh like
+
+some sort of a detail so first uh like
+
+it is asking about the endpoint URL you
+
+can uh keep you can write manually this
+
+particular URL then deployment name you
+
+can write the deployment name okay
+
+manually but I'm keeping it I'm keeping
+
+everything like by default only now here
+
+is a virtual machine so 2 core 8 GB 16
+
+uh 2 core 8 GB RAM and 16 GB is a dis
+
+and here is the charges for the virtual
+
+machine okay 0.1 per hour so I'm going
+
+to be select this standard only but if
+
+you want to select any custom one then
+
+definitely you can select that also uh
+
+let me show you where this one so once
+
+you will click on this drop down you
+
+will be getting all the option with
+
+respect to the machine so that is what I
+
+was telling to you if you want to make
+
+your process faster you can like select
+
+the instance according to your
+
+requirement okay now what I'm doing so
+
+here I'm keeping it this by default uh
+
+this a particular machine only so what
+
+is the which is the one so here is this
+
+EXT standard one now after this one guys
+
+the next thing is instance count so I
+
+will be keeping three instance okay now
+
+inferencing data collection okay so here
+
+I'm keeping enable only all the
+
+information by default now review and
+
+create now uh see you can review all the
+
+information one more time and finally
+
+you can click on this create now see
+
+here my application is going to be
+
+deploy guys so it takes time it will
+
+take some time now how you can check you
+
+can check inside this notification so
+
+this is a notification guys and my model
+
+is getting deployed so once uh it will
+
+be deployed you will get the
+
+notification over here inside this
+
+particular section so let it deploy
+
+let's wait uh for some time until what I
+
+can do I can write my code okay for the
+
+further thing so uh here I was returning
+
+this render template but uh I don't want
+
+as of now this one I'm writing a full
+
+flag code so first is what first uh is a
+
+if else condition so here I'm going to
+
+be write the condition my if condition
+
+so inside this condition guys or I can
+
+do one thing I can give you the entire
+
+code and we can understand like a step
+
+by step I think that would be great so
+
+see this is my complete code guys it is
+
+very simple very easy nothing is here
+
+and uh easily you can understand this
+
+particular code so inside this code see
+
+what I have I have my if and else
+
+condition so if request. method is post
+
+in that case what I'm doing I'm getting
+
+the user query okay from my user side
+
+I'm converting uh this query in this
+
+particular form okay this uh Json form
+
+then here is a body okay means I'm going
+
+to be dump it Json do dump data and then
+
+I'm going to be encoded right so in this
+
+particular format actually I want my
+
+query this is a specific format which is
+
+required okay to sending the query to my
+
+end Point URL now here is my URL guys so
+
+here actually I'll be keeping my URL
+
+which I'm generating so let me remove
+
+this one from here and let me keep my
+
+URL I will be showing you how you will
+
+be getting it now remove this API key
+
+you can keep your API key I'll be
+
+showing you how you will be getting it
+
+then if not API key I can generate this
+
+particular exception now this is my
+
+header guys okay so in the header you
+
+can see there is my uh like content this
+
+is what application SL here is what here
+
+is my API key and then this is my
+
+application name okay the deployment
+
+name now apart from this one see here
+
+what I have I have my request so I'm
+
+going to be request to this particular
+
+end you endpoint URL here is my URL and
+
+here I'm getting the response okay now
+
+from this particular response I'm
+
+collecting my text okay whatever uh
+
+thing I required and then finally I'm
+
+going to be return it to my HTML page
+
+getting my point if it is going to
+
+generate any sort of error in that case
+
+there is my exception module now you
+
+must be thinking from where I got this
+
+particular code so guys I didn't get it
+
+from my end I didn't write from my end I
+
+got it from The Tell Me from where from
+
+the uh like uh prom flow itself I'll be
+
+showing you after deployment you will
+
+get the entire template over there now
+
+here uh in the else uh it's nothing so
+
+yes if it is not a post request in that
+
+case uh yes we are just showing this
+
+particular template that's it now if you
+
+will look into the HTML code now just go
+
+and check with the HTML code so here uh
+
+what I have so it is very simple code
+
+now this is my header okay head and here
+
+is my body in my body I have one div
+
+this one right which is showing me a
+
+reply this a particular div and this is
+
+my form okay you can create form before
+
+the DI this is also fine now here is my
+
+form which is a like which is working on
+
+this particular URL uh this slash only
+
+and here I'm taking a user input okay
+
+now after taking this user input what
+
+I'm doing I'm uh like I'm click like we
+
+are clicking on this submit and finally
+
+uh I'll be getting my reply over here
+
+based on the like query okay so this is
+
+a simple HTML which uh I have written
+
+for all of you and here is what here is
+
+my app.py file now I have to keep this
+
+two information over here so uh what I
+
+can do I can check whether it is
+
+deploying or not uh Let me refresh uh
+
+this particular process and uh here I
+
+think uh it is deploying so just a
+
+second let me check guys whether it is
+
+deploying or not
+
+reloaded uh yeah see deployment is uh
+
+yes yes yes it is deploying so just go
+
+and check with the deployment detail you
+
+will be getting each and everything over
+
+here itself so detail is here guys this
+
+one and uh here is what here is my URL
+
+this one and this is my key okay right
+
+hand side you can check and is still it
+
+is creating see if you are not getting
+
+the deployment and all inside the
+
+notification you can simply refresh it
+
+getting my point so uh here see it is
+
+deploying and now this is my endpoint
+
+URL which is required to me I'm just
+
+going to be copy from here and simply
+
+going to paste inside my code okay now
+
+the next thing is what so here the next
+
+thing is this uh API key so just copy
+
+this API key from here and then keep it
+
+inside your code okay so here I'm going
+
+to be keep my API key now uh both thing
+
+is done now what is required so here I
+
+required my application name so I can
+
+remove this my project this one and what
+
+I can do I can keep my name so here is
+
+my name guys crash course r y DD so this
+
+is the name basically which was there
+
+and if you remember then at the end
+
+basically there was one so uh crashed
+
+course r u y dd1 so this is the
+
+particular uh requ request header and I
+
+hope this is clear to all of you now
+
+once it will be done guys I'll be making
+
+the request to my endpoint URL it takes
+
+some time so if you have initialized uh
+
+maybe uh at 150 and it will be done
+
+within like 10 to 15 minute this is a
+
+very minimum time for it it might take
+
+more than that uh as well so if you want
+
+to increase the time in that case you
+
+will have to play with the instance
+
+configuration and all everything so let
+
+it complete and then uh we'll hit the
+
+URL guys
+
+so here guys you can see my deployment
+
+is done so uh uh guys uh whatever name
+
+uh basically I given to the deployment
+
+it was giving me the issue uh I just I
+
+check with the log and all because uh
+
+previously during my practice I already
+
+created with the same name so what I did
+
+I uh changed my name over here rest of
+
+the process will be same nothing uh will
+
+be there so uh you can check out uh
+
+inside the log okay here is a log or
+
+else uh you will be getting the
+
+notification also right so uh it was
+
+giving me the issue that's why I changed
+
+the name and again I redeploy it with
+
+the same process which I shown you so
+
+after the deployment you will be able to
+
+find out this type of page okay now uh
+
+here you can see provision succeed and
+
+then uh here is what here is my endpoint
+
+URL the same one and is what here is my
+
+API key now what I can do I can keep
+
+this endpoint URL where inside my code
+
+and this key as well so let me copy the
+
+key and uh already I pasted this URL
+
+here you can see this one now let me
+
+keep the key as well got it so I have my
+
+key and I have my URL over here and
+
+along with that this is what this is my
+
+name okay as your model deployment name
+
+now one more thing I can show you over
+
+here see you can test it you can test it
+
+inside the uh Azure itself okay over the
+
+portal as well so let me write High over
+
+here so definitely it is going to be the
+
+answer now let me ask can you give me a
+
+price of Nike Air Max sh true so let's
+
+see what I'll be getting so if
+
+everything is perfect then it will
+
+generate the price yes I'm getting it
+
+and here is the price is what 150 USD
+
+now I was telling to you that if I want
+
+to connect it with the my application
+
+right I connect it with the flask and
+
+all so from where I will get the
+
+template so guys see just click on this
+
+consume after it here it will give you
+
+the each en detail see here is what here
+
+is the endpoint URL primary key
+
+secondary key now JavaScript python C s
+
+p is giving you all a sort of a
+
+languages okay four main languages and
+
+other uh thing also it supports so later
+
+on basically in one advance or R and all
+
+I will be showing you but here see for
+
+the consumption it is giving you four
+
+option now just click on this Python and
+
+this is the entire code so the entire
+
+reference I'm taking it I'm taking from
+
+here itself so try Okay the same uh from
+
+the the same code basically I pasted
+
+over there then accept Okay this
+
+exception the same code now here you can
+
+see the head so same header basically I
+
+WR written over there okay inside my
+
+code now everything's same and I took
+
+the reference from this template only
+
+now without wasting a time let's test
+
+our application so if everything is fine
+
+I'll be getting my answer so here I am
+
+going to stop it first of all and let me
+
+I'll do one thing let me stop my camera
+
+so that you can get access of the entire
+
+screen so here I'm simply writing python
+
+app do py now once I will write it down
+
+it guys so see uh I'll be getting my URL
+
+okay great now just click over here on
+
+this URL here is my chat Bo now simply
+
+write hi over here that's it
+
+so let's
+
+see perfect guys perfect perfect so here
+
+I'm getting my answer and it is in front
+
+of you only and now I can test right so
+
+here actually basically I can test with
+
+the different different question and all
+
+let's say here I'm going to be asked Can
+
+you tell
+
+me uh
+
+who is uh Gandhi so this is my question
+
+let's say I'm uh submitting it and see
+
+back in back end actually GPD model is
+
+working now it will provide me answer
+
+the request information not everyone the
+
+retrieve data okay so it is a giving me
+
+answer based on the retrieve data now
+
+let's see if I'm going to be asked the
+
+question can you tell me the price of
+
+the Nike ear Max shoe so here once I
+
+will submit it so I think I will be able
+
+to get
+
+it now here yes I'm getting it so see
+
+guys previously I was uh talking about
+
+uh previously basically I was asking
+
+this particular question but as a GPT
+
+model it was not giving the answer okay
+
+why because every information is trying
+
+to fetch from the uh document and is
+
+providing the answer so here what I will
+
+have to do tell me so here I will have
+
+to rectify my prompt okay whatever
+
+prompt in a back end uh like they are
+
+passing right so here in the prompt flow
+
+basically you will find out they're
+
+passing the prompt okay uh where you
+
+will get it you'll be getting inside the
+
+project itself uh let me show you where
+
+uh in the
+
+deployment this is my
+
+project okay prom flow this one prom
+
+flow and here is this two uh okay this
+
+one now just scroll down and you will be
+
+getting the prompt and all everything
+
+see so you will have to rectify Guys
+
+these particular prompt if you want to
+
+get your desired answer means uh with
+
+respect to the other question and all
+
+that's it nothing else so I hope uh you
+
+like this series guys I think uh I
+
+fulfilled my promise I created my own uh
+
+rag uh system okay I created my own
+
+chatbot and yes it will be able to
+
+provide you the answer with respect to
+
+each and every question in all you can
+
+ask about the nice sendal also so let's
+
+see whether it is working or not so once
+
+you will click on this submit and here
+
+you will be able to find out the detail
+
+means uh yes it is a patching from the
+
+document itself and based on that it is
+
+going to be argument the response so I
+
+hope uh you like this series and I
+
+started from the introduction and all
+
+but uh I kept uh the advanced part and
+
+all now uh yes if you liked it guys then
+
+please hit the like button please please
+
+mention in the comment section which
+
+part you like most if you have any doubt
+
+any question you can mention inside the
+
+comment section definitely I will look
+
+into it so thank you guys soon I'll be
+
+coming up with with uh many more uh
+
+different different courses and all so
+
+yeah uh please uh like subscribe the
+
+channel hit the like button uh if you
+
+liked it then yeah please share with
+
+your friends and whoever is required
+
+this type of tutorial and all so thank
+
+you bye-bye guys take care
+

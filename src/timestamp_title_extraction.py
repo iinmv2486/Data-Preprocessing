@@ -25,9 +25,28 @@ def extract_timestamps_from_description(video_id, api_key):
     
     # 타임스탬프와 제목을 추출
     timestamps = []
+    previous_minutes = 0  # 이전 타임스탬프의 분을 저장
+
     for match in re.finditer(pattern, description):
-        time, title = match.groups()
-        timestamps.append((time, title))
+        time_str, title = match.groups()
+
+        # 타임스탬프가 "MM:SS" 형식인지 확인하고 필요하면 "HH:MM:SS" 형식으로 변환
+        minutes, seconds = map(int, time_str.split(':'))
+        if minutes < previous_minutes:
+            # 이전 분보다 현재 분이 작으면 시간 단위가 변경되었음을 의미
+            hours = minutes // 60
+            minutes = minutes % 60
+            time_str = f"{hours}:{minutes:02d}:{seconds:02d}"
+        else:
+            if minutes >= 60:
+                hours = minutes // 60
+                minutes = minutes % 60
+                time_str = f"{hours}:{minutes:02d}:{seconds:02d}"
+            else:
+                time_str = f"{minutes:02d}:{seconds:02d}"
+
+        previous_minutes = minutes
+        timestamps.append((time_str, title))
     
     return timestamps
 

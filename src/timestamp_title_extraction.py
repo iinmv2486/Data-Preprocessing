@@ -2,6 +2,7 @@ import os
 from googleapiclient.discovery import build
 import re
 from dotenv import load_dotenv
+from get_video_info import extract_video_id
 
 # .env 파일 로드
 load_dotenv()
@@ -50,9 +51,14 @@ def extract_timestamps_from_description(video_id, api_key):
     
     return timestamps
 
-# API 키를 .env 파일에서 불러오기
-api_key = os.getenv("YOUTUBE_API_KEY")  # .env 파일에 저장된 키를 불러옴
-video_id = "8SF_h3xF3cE"  # 예시 비디오 ID
-timestamps = extract_timestamps_from_description(video_id, api_key)
-for time, title in timestamps:
-    print(f"{time} - {title}")
+
+if __name__ == "__main__":
+    # API 키를 .env 파일에서 불러오기
+    api_key = os.getenv("YOUTUBE_API_KEY")  # .env 파일에 저장된 키를 불러옴
+
+    video_url = "https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi"
+    video_id = extract_video_id(video_url)
+    
+    timestamps = extract_timestamps_from_description(video_id, api_key)
+    for time, title in timestamps:
+        print(f"{time} - {title}")

@@ -2,24 +2,12 @@ import re
 import os
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api.formatters import TextFormatter
-from pytube import YouTube
-
-def extract_video_id(url):
-    # 유튜브 URL에서 비디오 ID 추출
-    video_id_match = re.search(r"(?:v=|\/)([0-9A-Za-z_-]{11}).*", url)
-    if video_id_match:
-        return video_id_match.group(1)
-    else:
-        raise ValueError("Invalid YouTube URL")
-
-def get_video_title(url):
-    yt = YouTube(url)
-    return yt.title
+from get_video_info import extract_video_id, get_video_title
 
 def save_transcript_to_file(url, output_folder):
     try:
         video_id = extract_video_id(url)
-        transcript = YouTubeTranscriptApi.get_transcript(video_id)
+        transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=['en'], preserve_formatting=True)
         
         # 포매터를 사용해 텍스트 형식으로 변환
         formatter = TextFormatter()
@@ -44,10 +32,12 @@ def save_transcript_to_file(url, output_folder):
     except Exception as e:
         print(f"Error: {e}")
 
-# 테스트용 URL
-youtube_url = "https://www.youtube.com/watch?v=8SF_h3xF3cE&list=PLfYUBJiXbdtSvpQjSnJJ_PmDQB_VyT5iU"
+if __name__ == "__main__":
 
-# youtube_transcripts 폴더 경로
-output_folder = os.path.join(".", "youtube_transcripts")
-save_transcript_to_file(youtube_url, output_folder)
+    # 테스트용 URL
+    youtube_url = "https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi"
+
+    # youtube_transcripts 폴더 경로
+    output_folder = os.path.join(".", "youtube_transcripts")
+    save_transcript_to_file(youtube_url, output_folder)
 

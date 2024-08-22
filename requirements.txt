@@ -47,6 +47,7 @@ pydantic_core==2.20.1
 Pygments==2.18.0
 pyparsing==3.1.2
 PySocks==1.7.1
+python-dotenv==1.0.1
 pytube==15.0.0
 regex==2024.7.24
 requests==2.32.3
